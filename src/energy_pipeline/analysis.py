@@ -14,6 +14,11 @@ import duckdb
 from . import config
 
 
+def _r(x, nd: int = 3):
+    """Round, but keep None (e.g. a correlation with no data) as None."""
+    return None if x is None else round(float(x), nd)
+
+
 def _one(con, sql: str):
     return con.execute(sql).fetchone()
 
@@ -33,7 +38,7 @@ def compute(con: duckdb.DuckDBPyConnection) -> dict:
     f["coverage"] = {"first_date": str(first), "last_date": str(last), "half_hours": n_hh,
                      "days": _one(con, f"select count(*) from {daily}")[0]}
     f["clock_change_days"] = _rows(con, f"""
-        select cast(d.settlement_date as varchar) as date, d.clock_change, x.periods_reported
+        select cast(d.date_day as varchar) as date, d.clock_change, x.periods_reported
         from marts.dim_date d join {daily} x on x.settlement_date = d.date_day
         where d.is_clock_change_day order by 1""")
     full_years = [r["year"] for r in _rows(con, f"""
@@ -82,15 +87,16 @@ def compute(con: duckdb.DuckDBPyConnection) -> dict:
                count(*) as half_hours, round(avg(intensity_actual)) as avg_intensity
         from {hh} where intensity_actual is not null and wind_solar_pct is not null
         group by 1 order by min(wind_solar_pct)""")
-    f["corr_zero_carbon_intensity"] = round(_one(con, f"select corr(zero_carbon_pct, intensity_actual) from {hh}")[0], 3)
+    f["corr_zero_carbon_intensity"] = _r(_one(con, f"select corr(zero_carbon_pct, intensity_actual) from {hh}")[0])
 
     # 4. Best and worst times to use electricity
     by_hour = _rows(con, f"""
-        select season, local_hour, round(avg(intensity_actual)) as avg_intensity
-        from {hh} where intensity_actual is not null group by 1, 2 order by 1, 2""")
+        select d.season, f.local_hour, round(avg(f.intensity_actual)) as avg_intensity
+        from {hh} f join marts.dim_date d on d.date_key = f.date_key
+        where f.intensity_actual is not null group by 1, 2 order by 1, 2""")
     f["intensity_by_season_hour"] = by_hour
     best = {}
-    for season in sorted({r["season"] for r in by_hour} if by_hour and "season" in by_hour[0] else []):
+    for season in sorted({r["season"] for r in by_hour}):
         rows = [r for r in by_hour if r["season"] == season]
         lo = min(rows, key=lambda r: r["avg_intensity"])
         hi = max(rows, key=lambda r: r["avg_intensity"])
@@ -110,9 +116,9 @@ def compute(con: duckdb.DuckDBPyConnection) -> dict:
             select min(local_date), max(local_date) from marts.fct_regional_carbon_half_hourly""")]
 
     # 6. Weather and demand
-    f["corr_daily_demand_temperature"] = round(_one(con, f"""
-        select corr(demand_gwh, avg_temperature_c) from {daily} where is_complete_day and not is_weekend""")[0], 3)
-    f["corr_interconnector_imports"] = round(_one(con, f"select corr(net_interconnector_flow_mw, imports_pct) from {hh}")[0], 3)
+    f["corr_daily_demand_temperature"] = _r(_one(con, f"""
+        select corr(demand_gwh, avg_temperature_c) from {daily} where is_complete_day and not is_weekend""")[0])
+    f["corr_interconnector_imports"] = _r(_one(con, f"select corr(net_interconnector_flow_mw, imports_pct) from {hh}")[0])
 
     # 7. Data quality notes from raw -> staging
     raw_rows = _one(con, "select count(*) from raw.neso_demand")[0]
