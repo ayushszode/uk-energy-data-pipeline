@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      Raw data exactly as downloaded by src/energy_pipeline/extract.py and loaded by
+      load.py. Every column is text; _source_file and _loaded_at give lineage back to
+      the monthly CSV file each row came from.
+    schema: raw
+    tables:
+      - name: neso_demand
+        description: >
+          NESO Historic Demand Data: half-hourly GB demand and embedded wind/solar
+          estimates, one yearly CSV per year on the NESO Data Portal. Licence: NESO Open Data Licence.
+        columns:
+          - name: SETTLEMENT_DATE
+            description: Settlement date as text. The format has changed between yearly files.
+          - name: SETTLEMENT_PERIOD
+            description: Half-hour period of the day, 1-48 (46 or 50 on clock-change days).
+          - name: ND
+            description: National Demand (MW) - transmission demand excluding station load, pumping and exports.
+      - name: carbon_national
+        description: Carbon Intensity API national half-hourly intensity (gCO2/kWh). Licence CC BY 4.0.
+        loaded_at_field: "try_strptime(\"from\", '%Y-%m-%dT%H:%MZ')"
+        freshness:
+          warn_after: {count: 10, period: day}
+      - name: generation_mix
+        description: Carbon Intensity API national half-hourly generation mix (% by fuel).
+      - name: carbon_regional
+        description: Carbon Intensity API regional half-hourly intensity forecasts and mix (from 2025).
+      - name: weather_hourly
+        description: Open-Meteo historical hourly weather for nine large GB cities. Licence CC BY 4.0.
+      - name: bank_holidays
+        description: GOV.UK bank holidays for England and Wales, Scotland and Northern Ireland. Licence OGL v3.

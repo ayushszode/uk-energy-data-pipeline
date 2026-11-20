@@ -1,0 +1,28 @@
+version: 2
+
+seeds:
+  - name: regions
+    description: >
+      Reference list of Carbon Intensity API regions. IDs 1-14 are the
+      distribution network operator (DNO) areas; 15-17 are the nations and 18 is GB.
+    columns:
+      - name: region_id
+        description: Region ID used by the Carbon Intensity API.
+        data_tests: [unique, not_null]
+      - name: region_type
+        data_tests:
+          - accepted_values:
+              values: ["DNO area", "Nation", "Great Britain"]
+  - name: cities
+    description: >
+      Cities used to build a GB average temperature, with rough urban-area
+      population weights (millions). Must match CITIES in src/energy_pipeline/config.py.
+    columns:
+      - name: city
+        data_tests: [unique, not_null]
+      - name: population_weight_m
+        data_tests:
+          - not_null
+          - value_between:
+              min_value: 0.1
+              max_value: 15

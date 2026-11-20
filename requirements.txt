@@ -1,0 +1,11 @@
+# Pipeline + analysis + dashboard (install with: pip install -r requirements.txt && pip install -e .)
+duckdb>=1.1,<2
+dbt-core>=1.8,<2
+dbt-duckdb>=1.8,<2
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+scikit-learn>=1.4
+streamlit>=1.40
+plotly>=5.20
+pytest>=8

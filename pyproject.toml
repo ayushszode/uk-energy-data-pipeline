@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-pipeline"
+version = "1.0.0"
+description = "UK electricity demand and carbon data pipeline (Python extract, DuckDB, dbt, forecast, Streamlit)"
+authors = [{ name = "Ayush Zode" }]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

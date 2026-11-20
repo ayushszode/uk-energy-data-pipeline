@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: int_demand__half_hourly
+    description: >
+      Actual demand per settlement period with correct UTC and local start times.
+      Settlement periods count from UK local midnight, so on the day the clocks go
+      forward there are 46 periods and on the day they go back there are 50.
+    data_tests:
+      - unique_combination:
+          columns: [settlement_date, settlement_period]
+    columns:
+      - name: period_start_utc
+        description: Start of the settlement period in UTC.
+        data_tests: [unique, not_null]
+      - name: underlying_demand_mw
+        description: National Demand plus NESO embedded wind and solar estimates (an approximation of total GB demand).
+  - name: int_carbon__national_half_hourly
+    description: National carbon intensity with generation mix and grouped shares.
+    columns:
+      - name: period_start_utc
+        data_tests: [unique, not_null]
+      - name: zero_carbon_pct
+        description: Wind + solar + nuclear + hydro share of generation (%).
+        data_tests:
+          - value_between: {min_value: 0, max_value: 100.5}
+  - name: int_weather__gb_half_hourly
+    description: Population-weighted GB weather per half hour (hourly values repeated for both half hours).
+    columns:
+      - name: period_start_utc
+        data_tests: [unique, not_null]
+      - name: cities_reporting
+        description: Number of cities with a reading for that hour (9 when complete).

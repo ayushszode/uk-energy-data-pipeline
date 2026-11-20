@@ -1,0 +1,19 @@
+# Local warehouse and dbt build output (rebuilt from data/raw by `make pipeline`)
+warehouse/
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+logs/
+.user.yml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

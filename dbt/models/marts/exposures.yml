@@ -1,0 +1,27 @@
+version: 2
+
+exposures:
+  - name: streamlit_dashboard
+    label: UK Electricity Dashboard
+    type: application
+    maturity: medium
+    description: Streamlit dashboard (app/streamlit_app.py) built from exported mart tables.
+    owner:
+      name: Ayush Zode
+      email: 268604377+ayushszode@users.noreply.github.com
+    depends_on:
+      - ref('fct_electricity_half_hourly')
+      - ref('fct_daily_electricity')
+      - ref('fct_regional_carbon_half_hourly')
+      - ref('dim_region')
+
+  - name: next_day_peak_forecast
+    label: Next-day peak demand forecast
+    type: ml
+    maturity: medium
+    description: Forecast of tomorrow's peak National Demand (src/energy_pipeline/forecast.py).
+    owner:
+      name: Ayush Zode
+      email: 268604377+ayushszode@users.noreply.github.com
+    depends_on:
+      - ref('fct_daily_electricity')

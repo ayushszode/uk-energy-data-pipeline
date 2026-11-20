@@ -1,0 +1,11 @@
+uk_energy:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # Path is relative to where dbt is run (the repository root).
+      path: "{{ env_var('ENERGY_DUCKDB_PATH', 'warehouse/energy.duckdb') }}"
+      schema: main
+      threads: 4
+      settings:
+        TimeZone: UTC

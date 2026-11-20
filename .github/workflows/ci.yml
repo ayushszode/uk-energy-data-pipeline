@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Unit tests
+        run: pytest -q --ignore=tests/test_app.py
+      - name: Load raw files into DuckDB
+        if: hashFiles('data/raw/demand/*.csv.gz') != ''
+        run: python -m energy_pipeline.load
+      - name: dbt build (models + tests)
+        if: hashFiles('data/raw/demand/*.csv.gz') != ''
+        run: dbt build --project-dir dbt --profiles-dir dbt
+      - name: Analysis, forecast and export
+        if: hashFiles('data/raw/demand/*.csv.gz') != ''
+        run: |
+          python -m energy_pipeline.analysis
+          python -m energy_pipeline.forecast
+          python -m energy_pipeline.export
+      - name: Dashboard smoke test
+        if: hashFiles('data/raw/demand/*.csv.gz') != ''
+        run: pytest -q tests/test_app.py
+      - name: dbt docs (catalogue + lineage)
+        if: hashFiles('data/raw/demand/*.csv.gz') != ''
+        run: |
+          dbt docs generate --static --project-dir dbt --profiles-dir dbt
+          mkdir -p site && cp dbt/target/static_index.html site/index.html
+      - name: Upload docs site
+        if: hashFiles('data/raw/demand/*.csv.gz') != '' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publish-docs:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    continue-on-error: true   # needs GitHub Pages enabled (Settings -> Pages -> GitHub Actions)
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

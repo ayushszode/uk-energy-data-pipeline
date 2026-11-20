@@ -1,0 +1,116 @@
+version: 2
+
+models:
+  - name: stg_neso__demand
+    description: >
+      NESO half-hourly demand with proper types. Handles the two date formats used
+      across yearly files, flags forecast rows, and removes repeated periods
+      (keeping the most recent file).
+    data_tests:
+      - unique_combination:
+          columns: [settlement_date, settlement_period]
+    columns:
+      - name: settlement_date
+        description: Settlement date (UK local calendar day).
+        data_tests: [not_null]
+      - name: settlement_period
+        description: Half-hour period number within the settlement date (1-50).
+        data_tests:
+          - not_null
+          - value_between: {min_value: 1, max_value: 50}
+      - name: national_demand_mw
+        description: National Demand in MW.
+        data_tests:
+          - value_between: {min_value: 8000, max_value: 60000}
+      - name: embedded_solar_mw
+        description: NESO estimate of solar generation connected to local networks (MW). It lowers National Demand.
+        data_tests:
+          - value_between: {min_value: 0, max_value: 30000}
+      - name: embedded_wind_mw
+        description: NESO estimate of wind generation connected to local networks (MW).
+        data_tests:
+          - value_between: {min_value: 0, max_value: 15000}
+      - name: is_forecast
+        description: True when NESO marked the row as a forecast rather than an outturn.
+
+  - name: stg_carbon__national_intensity
+    description: National half-hourly carbon intensity (gCO2/kWh), forecast and actual.
+    columns:
+      - name: period_start_utc
+        description: Start of the half hour (UTC).
+        data_tests: [unique, not_null]
+      - name: intensity_actual
+        description: Estimated actual carbon intensity (gCO2/kWh).
+        data_tests:
+          - value_between: {min_value: 0, max_value: 700}
+      - name: intensity_forecast
+        description: Forecast carbon intensity (gCO2/kWh).
+        data_tests:
+          - value_between: {min_value: 0, max_value: 700}
+      - name: intensity_index
+        description: The API's band for the intensity.
+        data_tests:
+          - accepted_values:
+              values: ["very low", "low", "moderate", "high", "very high"]
+
+  - name: stg_carbon__generation_mix
+    description: National half-hourly generation mix (% of generation by fuel).
+    data_tests:
+      - percentages_sum_to:
+          columns: [biomass_pct, coal_pct, imports_pct, gas_pct, nuclear_pct, other_pct, hydro_pct, solar_pct, wind_pct]
+          target: 100
+          tolerance: 2
+    columns:
+      - name: period_start_utc
+        data_tests: [unique, not_null]
+      - name: gas_pct
+        data_tests:
+          - value_between: {min_value: 0, max_value: 100}
+      - name: wind_pct
+        data_tests:
+          - value_between: {min_value: 0, max_value: 100}
+      - name: solar_pct
+        data_tests:
+          - value_between: {min_value: 0, max_value: 100}
+
+  - name: stg_carbon__regional
+    description: Regional half-hourly carbon intensity forecasts and generation mix.
+    data_tests:
+      - unique_combination:
+          columns: [period_start_utc, region_id]
+    columns:
+      - name: region_id
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('regions')
+              field: region_id
+      - name: intensity_forecast
+        data_tests:
+          - value_between: {min_value: 0, max_value: 900}
+
+  - name: stg_weather__hourly
+    description: Hourly weather per city (UTC).
+    data_tests:
+      - unique_combination:
+          columns: [observed_at_utc, city]
+    columns:
+      - name: city
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('cities')
+              field: city
+      - name: temperature_c
+        data_tests:
+          - value_between: {min_value: -25, max_value: 42}
+
+  - name: stg_gov__bank_holidays
+    description: UK bank holidays by division.
+    columns:
+      - name: division
+        data_tests:
+          - accepted_values:
+              values: ["england-and-wales", "scotland", "northern-ireland"]
+      - name: holiday_date
+        data_tests: [not_null]

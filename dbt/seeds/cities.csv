@@ -1,0 +1,10 @@
+city,latitude,longitude,population_weight_m
+London,51.5074,-0.1278,9.8
+Birmingham,52.4862,-1.8904,2.4
+Manchester,53.4808,-2.2426,2.6
+Leeds,53.8008,-1.5491,1.8
+Glasgow,55.8642,-4.2518,1.0
+Newcastle,54.9783,-1.6178,0.8
+Bristol,51.4545,-2.5879,0.6
+Cardiff,51.4816,-3.1791,0.45
+Edinburgh,55.9533,-3.1883,0.5

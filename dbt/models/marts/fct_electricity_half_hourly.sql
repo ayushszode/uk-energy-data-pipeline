@@ -1,0 +1,41 @@
+-- Main fact table. Grain: one row per GB settlement period (half hour).
+-- Joins demand, national carbon intensity and generation mix, and GB weather.
+select
+    cast(strftime(d.settlement_date, '%Y%m%d') as integer) as date_key,
+    d.settlement_date,
+    d.settlement_period,
+    d.period_start_utc,
+    d.period_start_local,
+    hour(d.period_start_local) as local_hour,
+    strftime(d.period_start_local, '%H:%M') as local_time_label,
+    d.national_demand_mw,
+    d.underlying_demand_mw,
+    d.transmission_system_demand_mw,
+    d.embedded_wind_mw,
+    d.embedded_solar_mw,
+    d.embedded_wind_capacity_mw,
+    d.embedded_solar_capacity_mw,
+    d.pump_storage_pumping_mw,
+    d.net_interconnector_flow_mw,
+    c.intensity_actual,
+    c.intensity_forecast,
+    c.intensity_index,
+    c.wind_pct,
+    c.solar_pct,
+    c.nuclear_pct,
+    c.hydro_pct,
+    c.biomass_pct,
+    c.gas_pct,
+    c.coal_pct,
+    c.imports_pct,
+    c.other_pct,
+    c.wind_solar_pct,
+    c.zero_carbon_pct,
+    c.fossil_pct,
+    w.temperature_c,
+    w.wind_speed_kmh,
+    w.solar_radiation_wm2,
+    w.cloud_cover_pct
+from {{ ref('int_demand__half_hourly') }} as d
+left join {{ ref('int_carbon__national_half_hourly') }} as c on c.period_start_utc = d.period_start_utc
+left join {{ ref('int_weather__gb_half_hourly') }} as w on w.period_start_utc = d.period_start_utc

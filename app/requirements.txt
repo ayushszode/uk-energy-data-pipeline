@@ -1,0 +1,4 @@
+# Minimal dependencies for Streamlit Community Cloud (the app only reads app_data/).
+streamlit>=1.40
+pandas>=2.2
+plotly>=5.20

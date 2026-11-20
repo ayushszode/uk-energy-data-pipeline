@@ -1,0 +1,96 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: Calendar dimension - one row per day, with bank holidays, seasons and clock-change days.
+    columns:
+      - name: date_key
+        description: Date as an integer YYYYMMDD (join key for fact tables).
+        data_tests: [unique, not_null]
+      - name: expected_settlement_periods
+        description: Number of half-hour settlement periods the day should have (46, 48 or 50).
+        data_tests:
+          - accepted_values:
+              values: [46, 48, 50]
+              quote: false
+      - name: is_bank_holiday_ew
+        description: True on England and Wales bank holidays.
+      - name: season
+        data_tests:
+          - accepted_values:
+              values: ["Winter", "Spring", "Summer", "Autumn"]
+
+  - name: dim_region
+    description: Carbon Intensity API regions (DNO areas, nations and GB).
+    columns:
+      - name: region_id
+        data_tests: [unique, not_null]
+
+  - name: fct_electricity_half_hourly
+    description: >
+      Main fact table. Grain: one row per GB settlement period (half hour).
+      Combines NESO demand, national carbon intensity and generation mix, and
+      population-weighted GB weather.
+    data_tests:
+      - unique_combination:
+          columns: [settlement_date, settlement_period]
+    columns:
+      - name: date_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: period_start_utc
+        description: Start of the half hour (UTC).
+        data_tests: [unique, not_null]
+      - name: period_start_local
+        description: Start of the half hour in UK local time (GMT or BST).
+      - name: national_demand_mw
+        description: NESO National Demand (MW).
+        data_tests: [not_null]
+      - name: underlying_demand_mw
+        description: National Demand plus embedded wind and solar estimates (MW).
+      - name: intensity_actual
+        description: Estimated actual national carbon intensity (gCO2/kWh).
+      - name: wind_solar_pct
+        description: Wind plus solar share of generation (%).
+      - name: zero_carbon_pct
+        description: Wind, solar, nuclear and hydro share of generation (%).
+      - name: temperature_c
+        description: Population-weighted GB air temperature (C).
+
+  - name: fct_regional_carbon_half_hourly
+    description: Regional carbon intensity forecasts. Grain - one row per region per half hour.
+    data_tests:
+      - unique_combination:
+          columns: [period_start_utc, region_id]
+    columns:
+      - name: region_id
+        data_tests:
+          - relationships:
+              to: ref('dim_region')
+              field: region_id
+
+  - name: fct_daily_electricity
+    description: >
+      Daily summary. Grain - one row per settlement date. Input to the dashboard and
+      the next-day peak demand forecast.
+    columns:
+      - name: settlement_date
+        data_tests: [unique, not_null]
+      - name: date_key
+        data_tests:
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: is_complete_day
+        description: True when every expected settlement period was reported (46, 48 or 50).
+      - name: demand_gwh
+        description: Total National Demand energy for the day (GWh).
+      - name: peak_demand_mw
+        description: Highest half-hourly National Demand of the day (MW).
+        data_tests:
+          - value_between: {min_value: 10000, max_value: 60000}
+      - name: heating_degree_days
+        description: max(15.5 - average temperature, 0); a standard measure of heating need.

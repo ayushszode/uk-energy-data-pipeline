@@ -1,0 +1,56 @@
+name: Full extract
+
+# First-time (or full) download of every source. Results are pushed to a
+# separate branch (data/extract-<run>) so they can be reviewed before they
+# are copied into main. Logs are always pushed, even if a step fails.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["run/extract-*"]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+          mkdir -p reports/logs
+      - name: Extract all sources
+        continue-on-error: true
+        run: python -m energy_pipeline.extract --end current 2>&1 | tee reports/logs/extract.txt
+      - name: Load + dbt build
+        continue-on-error: true
+        run: |
+          python -m energy_pipeline.load 2>&1 | tee reports/logs/load.txt
+          dbt build --project-dir dbt --profiles-dir dbt 2>&1 | tee reports/logs/dbt_build.txt
+      - name: Analysis, forecast, export
+        continue-on-error: true
+        run: |
+          python -m energy_pipeline.analysis 2>&1 | tee reports/logs/analysis.txt
+          python -m energy_pipeline.forecast 2>&1 | tee reports/logs/forecast.txt
+          python -m energy_pipeline.export 2>&1 | tee reports/logs/export.txt
+      - name: Push data and logs to a review branch
+        if: always()
+        run: |
+          cp dbt/target/run_results.json reports/logs/ 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "data/extract-${{ github.run_number }}"
+          git add -A data/raw reports app_data
+          git commit -m "Full extract run ${{ github.run_number }}" || echo "nothing to commit"
+          git push origin "HEAD:data/extract-${{ github.run_number }}"

@@ -1,0 +1,52 @@
+name: Weekly data refresh
+
+# Every Monday: download the newest data, rebuild and test everything, and
+# commit the refreshed raw files, dashboard data and reports to main.
+# Nothing is committed if any dbt test fails.
+on:
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Extract new and recent months
+        run: python -m energy_pipeline.extract --end current --refresh-recent 2
+      - name: Load + dbt build (fails the run if any test fails)
+        run: |
+          python -m energy_pipeline.load
+          dbt build --project-dir dbt --profiles-dir dbt
+      - name: Source freshness (warning only)
+        run: dbt source freshness --project-dir dbt --profiles-dir dbt || true
+      - name: Analysis, forecast, export
+        run: |
+          python -m energy_pipeline.analysis
+          python -m energy_pipeline.forecast
+          python -m energy_pipeline.export
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/raw app_data reports
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Weekly data refresh ($(date -u +%Y-%m-%d))"
+          git push
