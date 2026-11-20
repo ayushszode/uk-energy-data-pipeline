@@ -1,0 +1,812 @@
+{
+  "coverage": {
+    "first_date": "2023-01-01",
+    "last_date": "2026-10-30",
+    "half_hours": 67152,
+    "days": 1399
+  },
+  "clock_change_days": [
+    {
+      "date": "2023-03-26",
+      "clock_change": "Clocks go forward",
+      "periods_reported": 46
+    },
+    {
+      "date": "2023-10-29",
+      "clock_change": "Clocks go back",
+      "periods_reported": 50
+    },
+    {
+      "date": "2024-03-31",
+      "clock_change": "Clocks go forward",
+      "periods_reported": 46
+    },
+    {
+      "date": "2024-10-27",
+      "clock_change": "Clocks go back",
+      "periods_reported": 50
+    },
+    {
+      "date": "2025-03-30",
+      "clock_change": "Clocks go forward",
+      "periods_reported": 46
+    },
+    {
+      "date": "2025-10-26",
+      "clock_change": "Clocks go back",
+      "periods_reported": 50
+    },
+    {
+      "date": "2026-03-29",
+      "clock_change": "Clocks go forward",
+      "periods_reported": 46
+    },
+    {
+      "date": "2026-10-25",
+      "clock_change": "Clocks go back",
+      "periods_reported": 50
+    }
+  ],
+  "full_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "peak_by_year": [
+    {
+      "year": 2023,
+      "avg_daily_peak_mw": 32577.0,
+      "max_peak_mw": 44109.0,
+      "demand_twh": 228.2
+    },
+    {
+      "year": 2024,
+      "avg_daily_peak_mw": 32764.0,
+      "max_peak_mw": 45202.0,
+      "demand_twh": 230.9
+    },
+    {
+      "year": 2025,
+      "avg_daily_peak_mw": 32781.0,
+      "max_peak_mw": 45924.0,
+      "demand_twh": 229.1
+    },
+    {
+      "year": 2026,
+      "avg_daily_peak_mw": 31917.0,
+      "max_peak_mw": 47382.0,
+      "demand_twh": 184.1
+    }
+  ],
+  "season_peak": [
+    {
+      "season": "Winter",
+      "avg_daily_peak_mw": 39139.0
+    },
+    {
+      "season": "Autumn",
+      "avg_daily_peak_mw": 33545.0
+    },
+    {
+      "season": "Spring",
+      "avg_daily_peak_mw": 31288.0
+    },
+    {
+      "season": "Summer",
+      "avg_daily_peak_mw": 26952.0
+    }
+  ],
+  "weekday_vs_weekend": [
+    {
+      "non_working_day": false,
+      "avg_gwh": 647.2
+    },
+    {
+      "non_working_day": true,
+      "avg_gwh": 570.2
+    }
+  ],
+  "weekend_drop_pct": 11.9,
+  "demand_change": {
+    "from_year": 2023,
+    "to_year": 2025,
+    "avg_nd_from": 26052,
+    "avg_nd_to": 26158,
+    "change_pct": 0.4
+  },
+  "june_midday": [
+    {
+      "local_time_label": "07:00",
+      "national_demand_mw": 22311.0,
+      "underlying_demand_mw": 25683.0,
+      "solar_mw": 2050.0
+    },
+    {
+      "local_time_label": "13:00",
+      "national_demand_mw": 21140.0,
+      "underlying_demand_mw": 32264.0,
+      "solar_mw": 9280.0
+    },
+    {
+      "local_time_label": "18:00",
+      "national_demand_mw": 25746.0,
+      "underlying_demand_mw": 30778.0,
+      "solar_mw": 3217.0
+    }
+  ],
+  "min_demand_record": [
+    {
+      "date": "2026-05-24",
+      "local_time_label": "13:00",
+      "national_demand_mw": 12626.0,
+      "solar_mw": 15391.0
+    }
+  ],
+  "intensity_by_year": [
+    {
+      "year": 2023,
+      "avg_intensity": 152.0,
+      "avg_wind_solar_pct": 34.2,
+      "avg_gas_pct": 32.3
+    },
+    {
+      "year": 2024,
+      "avg_intensity": 125.0,
+      "avg_wind_solar_pct": 35.8,
+      "avg_gas_pct": 26.5
+    },
+    {
+      "year": 2025,
+      "avg_intensity": 129.0,
+      "avg_wind_solar_pct": 38.4,
+      "avg_gas_pct": 28.2
+    },
+    {
+      "year": 2026,
+      "avg_intensity": 121.0,
+      "avg_wind_solar_pct": 40.5,
+      "avg_gas_pct": 24.5
+    }
+  ],
+  "intensity_by_wind_solar_band": [
+    {
+      "wind_solar_band": "<20%",
+      "half_hours": 12013,
+      "avg_intensity": 209.0
+    },
+    {
+      "wind_solar_band": "20-50%",
+      "half_hours": 37814,
+      "avg_intensity": 138.0
+    },
+    {
+      "wind_solar_band": "50%+",
+      "half_hours": 17170,
+      "avg_intensity": 67.0
+    }
+  ],
+  "corr_zero_carbon_intensity": -0.921,
+  "intensity_by_season_hour": [
+    {
+      "season": "Autumn",
+      "local_hour": 0,
+      "avg_intensity": 114.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 1,
+      "avg_intensity": 111.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 2,
+      "avg_intensity": 110.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 3,
+      "avg_intensity": 110.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 4,
+      "avg_intensity": 114.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 5,
+      "avg_intensity": 128.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 6,
+      "avg_intensity": 145.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 7,
+      "avg_intensity": 150.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 8,
+      "avg_intensity": 145.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 9,
+      "avg_intensity": 137.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 10,
+      "avg_intensity": 130.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 11,
+      "avg_intensity": 125.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 12,
+      "avg_intensity": 124.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 13,
+      "avg_intensity": 126.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 14,
+      "avg_intensity": 132.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 15,
+      "avg_intensity": 143.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 16,
+      "avg_intensity": 157.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 17,
+      "avg_intensity": 166.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 18,
+      "avg_intensity": 170.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 19,
+      "avg_intensity": 165.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 20,
+      "avg_intensity": 156.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 21,
+      "avg_intensity": 142.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 22,
+      "avg_intensity": 126.0
+    },
+    {
+      "season": "Autumn",
+      "local_hour": 23,
+      "avg_intensity": 116.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 0,
+      "avg_intensity": 122.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 1,
+      "avg_intensity": 121.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 2,
+      "avg_intensity": 119.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 3,
+      "avg_intensity": 119.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 4,
+      "avg_intensity": 123.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 5,
+      "avg_intensity": 133.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 6,
+      "avg_intensity": 142.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 7,
+      "avg_intensity": 139.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 8,
+      "avg_intensity": 131.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 9,
+      "avg_intensity": 120.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 10,
+      "avg_intensity": 111.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 11,
+      "avg_intensity": 105.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 12,
+      "avg_intensity": 102.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 13,
+      "avg_intensity": 101.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 14,
+      "avg_intensity": 104.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 15,
+      "avg_intensity": 114.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 16,
+      "avg_intensity": 131.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 17,
+      "avg_intensity": 146.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 18,
+      "avg_intensity": 156.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 19,
+      "avg_intensity": 159.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 20,
+      "avg_intensity": 158.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 21,
+      "avg_intensity": 150.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 22,
+      "avg_intensity": 134.0
+    },
+    {
+      "season": "Spring",
+      "local_hour": 23,
+      "avg_intensity": 123.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 0,
+      "avg_intensity": 129.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 1,
+      "avg_intensity": 127.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 2,
+      "avg_intensity": 126.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 3,
+      "avg_intensity": 126.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 4,
+      "avg_intensity": 128.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 5,
+      "avg_intensity": 133.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 6,
+      "avg_intensity": 136.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 7,
+      "avg_intensity": 131.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 8,
+      "avg_intensity": 122.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 9,
+      "avg_intensity": 111.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 10,
+      "avg_intensity": 103.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 11,
+      "avg_intensity": 97.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 12,
+      "avg_intensity": 93.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 13,
+      "avg_intensity": 91.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 14,
+      "avg_intensity": 93.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 15,
+      "avg_intensity": 100.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 16,
+      "avg_intensity": 116.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 17,
+      "avg_intensity": 134.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 18,
+      "avg_intensity": 147.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 19,
+      "avg_intensity": 156.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 20,
+      "avg_intensity": 161.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 21,
+      "avg_intensity": 160.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 22,
+      "avg_intensity": 147.0
+    },
+    {
+      "season": "Summer",
+      "local_hour": 23,
+      "avg_intensity": 134.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 0,
+      "avg_intensity": 118.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 1,
+      "avg_intensity": 115.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 2,
+      "avg_intensity": 114.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 3,
+      "avg_intensity": 113.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 4,
+      "avg_intensity": 117.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 5,
+      "avg_intensity": 130.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 6,
+      "avg_intensity": 150.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 7,
+      "avg_intensity": 157.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 8,
+      "avg_intensity": 158.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 9,
+      "avg_intensity": 154.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 10,
+      "avg_intensity": 149.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 11,
+      "avg_intensity": 146.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 12,
+      "avg_intensity": 146.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 13,
+      "avg_intensity": 148.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 14,
+      "avg_intensity": 154.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 15,
+      "avg_intensity": 162.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 16,
+      "avg_intensity": 169.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 17,
+      "avg_intensity": 169.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 18,
+      "avg_intensity": 167.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 19,
+      "avg_intensity": 162.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 20,
+      "avg_intensity": 153.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 21,
+      "avg_intensity": 140.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 22,
+      "avg_intensity": 126.0
+    },
+    {
+      "season": "Winter",
+      "local_hour": 23,
+      "avg_intensity": 117.0
+    }
+  ],
+  "best_hours_by_season": {
+    "Autumn": {
+      "cleanest_hour": 2,
+      "cleanest": 110.0,
+      "dirtiest_hour": 18,
+      "dirtiest": 170.0
+    },
+    "Spring": {
+      "cleanest_hour": 13,
+      "cleanest": 101.0,
+      "dirtiest_hour": 19,
+      "dirtiest": 159.0
+    },
+    "Summer": {
+      "cleanest_hour": 13,
+      "cleanest": 91.0,
+      "dirtiest_hour": 20,
+      "dirtiest": 161.0
+    },
+    "Winter": {
+      "cleanest_hour": 3,
+      "cleanest": 113.0,
+      "dirtiest_hour": 16,
+      "dirtiest": 169.0
+    }
+  },
+  "regions": [
+    {
+      "region_name": "South Scotland",
+      "avg_intensity": 13.0,
+      "avg_zero_carbon_pct": 93.3,
+      "avg_wind_pct": 62.3
+    },
+    {
+      "region_name": "North East England",
+      "avg_intensity": 25.0,
+      "avg_zero_carbon_pct": 48.5,
+      "avg_wind_pct": 27.2
+    },
+    {
+      "region_name": "North Scotland",
+      "avg_intensity": 27.0,
+      "avg_zero_carbon_pct": 92.6,
+      "avg_wind_pct": 89.3
+    },
+    {
+      "region_name": "North West England",
+      "avg_intensity": 47.0,
+      "avg_zero_carbon_pct": 77.8,
+      "avg_wind_pct": 38.0
+    },
+    {
+      "region_name": "North Wales & Merseyside",
+      "avg_intensity": 80.0,
+      "avg_zero_carbon_pct": 75.9,
+      "avg_wind_pct": 50.8
+    },
+    {
+      "region_name": "East England",
+      "avg_intensity": 121.0,
+      "avg_zero_carbon_pct": 65.5,
+      "avg_wind_pct": 34.8
+    },
+    {
+      "region_name": "West Midlands",
+      "avg_intensity": 122.0,
+      "avg_zero_carbon_pct": 61.0,
+      "avg_wind_pct": 36.2
+    },
+    {
+      "region_name": "Yorkshire",
+      "avg_intensity": 128.0,
+      "avg_zero_carbon_pct": 36.9,
+      "avg_wind_pct": 30.5
+    },
+    {
+      "region_name": "London",
+      "avg_intensity": 144.0,
+      "avg_zero_carbon_pct": 39.6,
+      "avg_wind_pct": 24.1
+    },
+    {
+      "region_name": "South East England",
+      "avg_intensity": 159.0,
+      "avg_zero_carbon_pct": 24.3,
+      "avg_wind_pct": 17.3
+    },
+    {
+      "region_name": "South England",
+      "avg_intensity": 180.0,
+      "avg_zero_carbon_pct": 28.9,
+      "avg_wind_pct": 15.1
+    },
+    {
+      "region_name": "East Midlands",
+      "avg_intensity": 183.0,
+      "avg_zero_carbon_pct": 39.5,
+      "avg_wind_pct": 28.3
+    },
+    {
+      "region_name": "South West England",
+      "avg_intensity": 237.0,
+      "avg_zero_carbon_pct": 33.7,
+      "avg_wind_pct": 12.8
+    },
+    {
+      "region_name": "South Wales",
+      "avg_intensity": 256.0,
+      "avg_zero_carbon_pct": 34.0,
+      "avg_wind_pct": 22.8
+    }
+  ],
+  "regional_period": [
+    "2025-01-01",
+    "2026-11-20"
+  ],
+  "corr_daily_demand_temperature": -0.815,
+  "corr_interconnector_imports": 0.799,
+  "data_quality": {
+    "raw_demand_rows": 67152,
+    "staged_demand_rows": 67152,
+    "repeated_rows_removed": 0,
+    "unparsed_dates": 0,
+    "forecast_rows_excluded": 0,
+    "date_formats": [
+      {
+        "format": "DD-MON-YYYY",
+        "rows": 17568
+      },
+      {
+        "format": "DD-Mon-YY",
+        "rows": 17520
+      },
+      {
+        "format": "YYYY-MM-DD",
+        "rows": 32064
+      }
+    ],
+    "half_hours_missing_intensity": 127,
+    "half_hours_missing_temperature": 0
+  }
+}

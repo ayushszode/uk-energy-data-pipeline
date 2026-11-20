@@ -1,0 +1,17 @@
+{
+  "tests": 67,
+  "models_and_seeds": 16,
+  "by_status": {
+    "pass": 66,
+    "warn": 1
+  },
+  "warnings": [
+    {
+      "test": "assert_no_gaps_in_national_carbon",
+      "failing_rows": 2,
+      "message": "Got 2 results, configured to warn if != 0"
+    }
+  ],
+  "failures": [],
+  "generated_at": "2026-11-20T20:30:42.465155Z"
+}
