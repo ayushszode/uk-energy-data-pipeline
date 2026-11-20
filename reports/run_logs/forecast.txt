@@ -1,0 +1,58 @@
+/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/forecast.py:52: Pandas4Warning: DatetimeIndex.dayofweek is deprecated and will be removed in a future version. Use DatetimeIndex.day_of_week instead.
+  dow = out.index.dayofweek
+/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/forecast.py:55: Pandas4Warning: DatetimeIndex.dayofyear is deprecated and will be removed in a future version. Use DatetimeIndex.day_of_year instead.
+  doy = out.index.dayofyear
+          model      split  days  mae_mw  mape_pct  rmse_mw  bias_mw
+naive_yesterday validation   184 1465.80      4.60  1866.91   -48.94
+naive_yesterday       test   303 1519.52      4.86  1896.67     9.10
+naive_last_week validation   184 1613.98      4.93  2148.60  -341.03
+naive_last_week       test   303 1748.32      5.42  2353.44    15.53
+          ridge validation   184  853.95      2.69  1169.33   202.84
+          ridge       test   303  873.63      2.79  1080.00  -105.60
+            gbm validation   184  898.59      2.82  1233.37   -59.24
+            gbm       test   303  912.51      2.89  1139.55   -40.14
+ gbm_no_weather validation   184  988.10      3.10  1257.59   -18.09
+ gbm_no_weather       test   303  976.44      3.07  1259.17   -59.88
+{
+  "target": "peak_demand_mw",
+  "train_days": 904,
+  "validation_days": 184,
+  "test_days": 303,
+  "train_period": [
+    "2023-01-09",
+    "2025-06-30"
+  ],
+  "validation_period": [
+    "2025-07-01",
+    "2025-12-31"
+  ],
+  "test_period": [
+    "2026-01-01",
+    "2026-10-30"
+  ],
+  "selection_rule": "lowest validation MAE",
+  "chosen_model": "ridge",
+  "chosen_test": {
+    "model": "ridge",
+    "split": "test",
+    "days": 303,
+    "mae_mw": 873.63,
+    "mape_pct": 2.79,
+    "rmse_mw": 1080.0,
+    "bias_mw": -105.6
+  },
+  "naive_last_week_test": {
+    "model": "naive_last_week",
+    "split": "test",
+    "days": 303,
+    "mae_mw": 1748.32,
+    "mape_pct": 5.42,
+    "rmse_mw": 2353.44,
+    "bias_mw": 15.53
+  },
+  "mae_improvement_vs_last_week_mw": 874.7,
+  "mae_improvement_95ci_mw": [
+    700.1,
+    1066.1
+  ]
+}

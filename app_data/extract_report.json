@@ -1,0 +1,59 @@
+{
+  "run_at": "2026-11-20T20:30:21+00:00",
+  "start": "2023-01",
+  "end": "2026-11",
+  "errors": {},
+  "demand": {
+    "years_found": [
+      2026
+    ],
+    "columns_seen": {
+      "2026": [
+        "SETTLEMENT_DATE",
+        "SETTLEMENT_PERIOD",
+        "ND",
+        "FORECAST_ACTUAL_INDICATOR",
+        "TSD",
+        "ENGLAND_WALES_DEMAND",
+        "EMBEDDED_WIND_GENERATION",
+        "EMBEDDED_WIND_CAPACITY",
+        "EMBEDDED_SOLAR_GENERATION",
+        "EMBEDDED_SOLAR_CAPACITY",
+        "NON_BM_STOR",
+        "PUMP_STORAGE_PUMPING",
+        "SCOTTISH_TRANSFER",
+        "IFA_FLOW",
+        "IFA2_FLOW",
+        "BRITNED_FLOW",
+        "MOYLE_FLOW",
+        "EAST_WEST_FLOW",
+        "NEMO_FLOW",
+        "NSL_FLOW",
+        "ELECLINK_FLOW",
+        "VIKING_FLOW",
+        "GREENLINK_FLOW"
+      ]
+    },
+    "months": {},
+    "missing_months": [
+      "2026-11"
+    ]
+  },
+  "carbon_national": {
+    "months": {},
+    "days_refetched": {}
+  },
+  "generation_mix": {
+    "months": {},
+    "days_refetched": {}
+  },
+  "carbon_regional": {
+    "months": {},
+    "days_refetched": {}
+  },
+  "bank_holidays": {
+    "rows": 280,
+    "first": "2019-01-01",
+    "last": "2028-12-26"
+  }
+}

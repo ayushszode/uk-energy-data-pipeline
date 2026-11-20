@@ -1,0 +1,7 @@
+[export] daily: 1,399 rows
+[export] half_hourly: 67,152 rows
+[export] profile_by_time: 192 rows
+[export] regional_daily: 12,402 rows
+[export] regional_hour_profile: 336 rows
+[export] clock_change_days: 8 rows
+[export] dbt tests: {'pass': 66, 'warn': 1}
