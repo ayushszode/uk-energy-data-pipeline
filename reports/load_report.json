@@ -1,0 +1,11 @@
+{
+  "loaded_at": "2026-11-20T20:28:21",
+  "rows": {
+    "neso_demand": 67152,
+    "carbon_national": 68031,
+    "generation_mix": 68021,
+    "carbon_regional": 594702,
+    "weather_hourly": 305424,
+    "bank_holidays": 280
+  }
+}

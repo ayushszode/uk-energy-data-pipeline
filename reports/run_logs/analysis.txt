@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/analysis.py", line 196, in <module>
+    main()
+  File "/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/analysis.py", line 187, in main
+    findings = compute(con)
+               ^^^^^^^^^^^^
+  File "/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/analysis.py", line 35, in compute
+    f["clock_change_days"] = _rows(con, f"""
+                             ^^^^^^^^^^^^^^^
+  File "/home/runner/work/uk-energy-data-pipeline/uk-energy-data-pipeline/src/energy_pipeline/analysis.py", line 22, in _rows
+    cur = con.execute(sql)
+          ^^^^^^^^^^^^^^^^
+_duckdb.BinderException: Binder Error: Table "d" does not have a column named "settlement_date"
+
+Candidate bindings: : "date_day"
+
+LINE 2:         select cast(d.settlement_date as varchar) as date, d.clock_change, x...
+                            ^

@@ -1,0 +1,6 @@
+[load] raw.neso_demand: 67,152 rows from 46 files
+[load] raw.carbon_national: 68,031 rows from 47 files
+[load] raw.generation_mix: 68,021 rows from 47 files
+[load] raw.carbon_regional: 594,702 rows from 23 files
+[load] raw.weather_hourly: 305,424 rows from 47 files
+[load] raw.bank_holidays: 280 rows from 1 files
