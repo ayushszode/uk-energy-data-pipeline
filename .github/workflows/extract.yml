@@ -29,25 +29,25 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install -e .
-          mkdir -p reports/logs
+          mkdir -p reports/run_logs
       - name: Extract all sources
         continue-on-error: true
-        run: python -m energy_pipeline.extract --end current 2>&1 | tee reports/logs/extract.txt
+        run: python -m energy_pipeline.extract --end current 2>&1 | tee reports/run_logs/extract.txt
       - name: Load + dbt build
         continue-on-error: true
         run: |
-          python -m energy_pipeline.load 2>&1 | tee reports/logs/load.txt
-          dbt build --project-dir dbt --profiles-dir dbt 2>&1 | tee reports/logs/dbt_build.txt
+          python -m energy_pipeline.load 2>&1 | tee reports/run_logs/load.txt
+          dbt build --project-dir dbt --profiles-dir dbt 2>&1 | tee reports/run_logs/dbt_build.txt
       - name: Analysis, forecast, export
         continue-on-error: true
         run: |
-          python -m energy_pipeline.analysis 2>&1 | tee reports/logs/analysis.txt
-          python -m energy_pipeline.forecast 2>&1 | tee reports/logs/forecast.txt
-          python -m energy_pipeline.export 2>&1 | tee reports/logs/export.txt
+          python -m energy_pipeline.analysis 2>&1 | tee reports/run_logs/analysis.txt
+          python -m energy_pipeline.forecast 2>&1 | tee reports/run_logs/forecast.txt
+          python -m energy_pipeline.export 2>&1 | tee reports/run_logs/export.txt
       - name: Push data and logs to a review branch
         if: always()
         run: |
-          cp dbt/target/run_results.json reports/logs/ 2>/dev/null || true
+          cp dbt/target/run_results.json reports/run_logs/ 2>/dev/null || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "data/extract-${{ github.run_number }}"

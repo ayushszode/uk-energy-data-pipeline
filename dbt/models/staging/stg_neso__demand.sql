@@ -8,10 +8,17 @@ typed as (
     select
         trim(settlement_date) as settlement_date_raw,
         case
-            -- Newer files: 2024-01-31 (sometimes with a time part)
+            -- Newer files: 2025-01-31 (sometimes with a time part)
             when regexp_matches(trim(settlement_date), '^\d{4}-\d{2}-\d{2}')
                 then try_cast(substr(trim(settlement_date), 1, 10) as date)
-            -- Older files: 31-JAN-2024
+            -- 2023 file: 31-Jan-23 (two-digit year)
+            when regexp_matches(trim(settlement_date), '^\d{1,2}-[A-Za-z]{3}-\d{2}$')
+                then make_date(
+                    2000 + try_cast(split_part(trim(settlement_date), '-', 3) as bigint),
+                    cast(list_position(['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
+                                       upper(split_part(trim(settlement_date), '-', 2))) as bigint),
+                    try_cast(split_part(trim(settlement_date), '-', 1) as bigint))
+            -- 2024 file: 31-JAN-2024
             when regexp_matches(trim(settlement_date), '^\d{1,2}-[A-Za-z]{3}-\d{4}$')
                 then make_date(
                     try_cast(split_part(trim(settlement_date), '-', 3) as bigint),

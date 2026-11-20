@@ -125,7 +125,8 @@ def compute(con: duckdb.DuckDBPyConnection) -> dict:
         "forecast_rows_excluded": _one(con, "select count(*) from staging.stg_neso__demand where is_forecast")[0],
         "date_formats": _rows(con, """
             select case when regexp_matches(settlement_date_raw, '^\\d{4}-') then 'YYYY-MM-DD'
-                        when regexp_matches(settlement_date_raw, '^\\d{1,2}-[A-Za-z]{3}-') then 'DD-MON-YYYY'
+                        when regexp_matches(settlement_date_raw, '^\\d{1,2}-[A-Za-z]{3}-\\d{4}$') then 'DD-MON-YYYY'
+                        when regexp_matches(settlement_date_raw, '^\\d{1,2}-[A-Za-z]{3}-\\d{2}$') then 'DD-Mon-YY'
                         else 'other' end as format, count(*) as rows
             from staging.stg_neso__demand group by 1 order by 1"""),
         "half_hours_missing_intensity": _one(con, f"select count(*) from {hh} where intensity_actual is null")[0],

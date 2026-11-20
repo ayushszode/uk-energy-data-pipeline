@@ -74,6 +74,9 @@ def parse_settlement_date(text: str) -> date | None:
     m = re.match(r"^(\d{1,2})-([A-Za-z]{3})-(\d{4})$", s)
     if m and m.group(2).upper() in MONTHS_ABBR:
         return date(int(m.group(3)), MONTHS_ABBR.index(m.group(2).upper()) + 1, int(m.group(1)))
+    m = re.match(r"^(\d{1,2})-([A-Za-z]{3})-(\d{2})$", s)  # 2023 file: 01-Jan-23
+    if m and m.group(2).upper() in MONTHS_ABBR:
+        return date(2000 + int(m.group(3)), MONTHS_ABBR.index(m.group(2).upper()) + 1, int(m.group(1)))
     m = re.match(r"^(\d{2})/(\d{2})/(\d{4})$", s)
     if m:
         return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
@@ -105,8 +108,10 @@ def extract_demand(months: list[Month], report: dict) -> None:
         parts, seen = split_neso_csv(text)
         report["demand"]["columns_seen"][str(year)] = seen
         if "unparsed" in parts:
+            bad = parts.pop("unparsed")
             report["demand"].setdefault("unparsed_rows", 0)
-            report["demand"]["unparsed_rows"] += len(parts.pop("unparsed"))
+            report["demand"]["unparsed_rows"] += len(bad)
+            report["demand"].setdefault("unparsed_examples", {})[str(year)] = bad["SETTLEMENT_DATE"].head(3).tolist()
         for label, part in parts.items():
             if label in wanted:
                 write_month(part, "demand", Month.parse(label))
@@ -163,10 +168,22 @@ def flatten_regional(payload: dict) -> list[dict]:
     return rows
 
 
+def _year_segments(start: date, end: date) -> list[tuple[date, date]]:
+    """Split [start, end) at 1 January. The /generation and /regional endpoints
+    return incomplete data for requests that cross a year boundary."""
+    out, s = [], start
+    while s < end:
+        e = min(date(s.year + 1, 1, 1), end)
+        out.append((s, e))
+        s = e
+    return out
+
+
 def _fetch_windowed(path: str, flatten, start: date, end: date) -> list[dict]:
     """Call a {from}/{to} endpoint in 14-day windows, halving the window if refused."""
     rows: list[dict] = []
-    for s, e in windows(start, end, config.CARBON_WINDOW_DAYS):
+    all_windows = [w for seg in _year_segments(start, end) for w in windows(*seg, config.CARBON_WINDOW_DAYS)]
+    for s, e in all_windows:
         stack = [(s, e)]
         while stack:
             a, b = stack.pop()
@@ -190,8 +207,39 @@ def _keep_month(rows: list[dict], month: Month, keys: list[str]) -> pd.DataFrame
     start = pd.Timestamp(month.start, tz="UTC")
     end = pd.Timestamp(month.end, tz="UTC")
     ts = pd.to_datetime(df["from"], utc=True, errors="coerce")
-    df = df[(ts >= start) & (ts < end)]
+    now = pd.Timestamp.now(tz="UTC")
+    # Keep this month's periods only, and nothing in the future (those are forecasts).
+    df = df[(ts >= start) & (ts < end) & (ts < now)]
     return df.drop_duplicates(subset=keys, keep="last").reset_index(drop=True)
+
+
+def _missing_days(df: pd.DataFrame, month: Month) -> list[date]:
+    """UTC days in the month (up to yesterday) with fewer than 48 half hours."""
+    today = datetime.now(timezone.utc).date()
+    last = min(month.end, today)
+    days = [month.start + timedelta(days=i) for i in range((last - month.start).days)]
+    if df.empty:
+        return days
+    have = pd.to_datetime(df["from"], utc=True).drop_duplicates().dt.date.value_counts()
+    return [d for d in days if have.get(d, 0) < 48]
+
+
+def _fetch_month(path: str, flatten, month: Month, keys: list[str]) -> tuple[pd.DataFrame, int]:
+    """Fetch a month in windows, then re-ask day by day for any day that came back short."""
+    # Ask for one extra day either side, then keep only this month's periods.
+    # This avoids losing the first or last half hour at month edges.
+    rows = _fetch_windowed(path, flatten, month.start - timedelta(days=1), month.end + timedelta(days=1))
+    df = _keep_month(rows, month, keys)
+    refetched = 0
+    for d in _missing_days(df, month)[:31]:
+        try:
+            rows.extend(_fetch_windowed(path, flatten, d, d + timedelta(days=1)))
+            refetched += 1
+        except Exception as exc:  # a real outage at the source: keep what we have
+            print(f"[extract] {path} {d}: day re-fetch failed ({exc})")
+    if refetched:
+        df = _keep_month(rows, month, keys)
+    return df, refetched
 
 
 def extract_carbon(months: list[Month], report: dict) -> None:
@@ -200,27 +248,26 @@ def extract_carbon(months: list[Month], report: dict) -> None:
         ("generation_mix", "/generation", flatten_generation, ["from"]),
     ]
     for source, path, flatten, keys in jobs:
-        report[source] = {"months": {}}
+        report[source] = {"months": {}, "days_refetched": {}}
         for m in months:
-            # Ask for one extra day either side, then keep only this month's periods.
-            # This avoids losing the first or last half hour at month edges.
-            rows = _fetch_windowed(path, flatten, m.start - timedelta(days=1), m.end + timedelta(days=1))
-            df = _keep_month(rows, m, keys)
+            df, refetched = _fetch_month(path, flatten, m, keys)
             write_month(df, source, m)
             report[source]["months"][m.label] = len(df)
+            if refetched:
+                report[source]["days_refetched"][m.label] = refetched
 
 
 def extract_regional(months: list[Month], report: dict) -> None:
     first = Month.parse(config.REGIONAL_START_MONTH)
-    report["carbon_regional"] = {"months": {}}
+    report["carbon_regional"] = {"months": {}, "days_refetched": {}}
     for m in months:
         if m < first:
             continue
-        rows = _fetch_windowed("/regional/intensity", flatten_regional,
-                               m.start - timedelta(days=1), m.end + timedelta(days=1))
-        df = _keep_month(rows, m, ["from", "regionid"])
+        df, refetched = _fetch_month("/regional/intensity", flatten_regional, m, ["from", "regionid"])
         write_month(df, "carbon_regional", m)
         report["carbon_regional"]["months"][m.label] = len(df)
+        if refetched:
+            report["carbon_regional"]["days_refetched"][m.label] = refetched
 
 
 # ---------------------------------------------------------------------------

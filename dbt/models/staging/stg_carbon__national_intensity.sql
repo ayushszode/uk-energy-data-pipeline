@@ -8,8 +8,8 @@ typed as (
     select
         {{ parse_api_timestamp('"from"') }} as period_start_utc,
         {{ parse_api_timestamp('"to"') }} as period_end_utc,
-        try_cast(forecast as integer) as intensity_forecast,
-        try_cast(actual as integer) as intensity_actual,
+        cast(round(try_cast(forecast as double)) as integer) as intensity_forecast,
+        cast(round(try_cast(actual as double)) as integer) as intensity_actual,
         lower(trim("index")) as intensity_index,
         _source_file,
         _loaded_at

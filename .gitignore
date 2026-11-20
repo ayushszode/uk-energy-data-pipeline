@@ -3,7 +3,7 @@ warehouse/
 dbt/target/
 dbt/logs/
 dbt/dbt_packages/
-logs/
+/logs/
 .user.yml
 
 # Python

@@ -10,7 +10,7 @@ typed as (
         try_cast(regionid as integer) as region_id,
         trim(shortname) as region_short_name,
         trim(dnoregion) as dno_region,
-        try_cast(forecast as integer) as intensity_forecast,
+        cast(round(try_cast(forecast as double)) as integer) as intensity_forecast,
         lower(trim("index")) as intensity_index,
         try_cast(biomass_perc as double) as biomass_pct,
         try_cast(coal_perc as double) as coal_pct,

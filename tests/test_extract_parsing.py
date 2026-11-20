@@ -12,13 +12,14 @@ def test_parse_settlement_date_handles_all_formats():
     assert extract.parse_settlement_date("2024-01-31T00:00:00") == date(2024, 1, 31)
     assert extract.parse_settlement_date("01-FEB-2024") == date(2024, 2, 1)
     assert extract.parse_settlement_date("1-Feb-2024") == date(2024, 2, 1)
+    assert extract.parse_settlement_date("01-Jan-23") == date(2023, 1, 1)   # the 2023 file's format
     assert extract.parse_settlement_date("31/01/2024") == date(2024, 1, 31)
     assert extract.parse_settlement_date("rubbish") is None
 
 
 def test_split_neso_csv_keeps_raw_text_and_adds_missing_columns():
     parts, seen = extract.split_neso_csv((FIXTURES / "neso_sample.csv").read_text())
-    assert set(parts) == {"2024-01", "2024-02", "unparsed"}
+    assert set(parts) == {"2023-03", "2024-01", "2024-02", "unparsed"}
     jan = parts["2024-01"]
     assert len(jan) == 2
     assert jan.loc[0, "ND"] == "25000"                # still text, not converted
@@ -71,3 +72,18 @@ def test_flatten_bank_holidays_and_weather():
     assert hol.to_dict("records") == [{"division": "england-and-wales", "date": "2026-12-25", "title": "Christmas Day", "notes": ""}]
     w = extract.flatten_open_meteo({"hourly": {"time": ["2026-01-01T00:00"], "temperature_2m": [4.2]}}, "Leeds")
     assert list(w.columns) == ["time", "city", "temperature_2m"] and w.loc[0, "city"] == "Leeds"
+
+
+def test_year_segments_split_at_new_year():
+    segs = extract._year_segments(date(2025, 12, 31), date(2026, 1, 15))
+    assert segs == [(date(2025, 12, 31), date(2026, 1, 1)), (date(2026, 1, 1), date(2026, 1, 15))]
+
+
+def test_missing_days_finds_short_days():
+    import pandas as pd
+    full = [f"2024-06-01T{h:02d}:{m:02d}Z" for h in range(24) for m in (0, 30)]
+    short = [f"2024-06-02T{h:02d}:00Z" for h in range(10)]
+    df = pd.DataFrame({"from": full + short})
+    missing = extract._missing_days(df, Month.parse("2024-06"))
+    assert date(2024, 6, 1) not in missing
+    assert date(2024, 6, 2) in missing and date(2024, 6, 30) in missing
