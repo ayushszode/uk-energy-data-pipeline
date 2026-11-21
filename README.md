@@ -5,7 +5,7 @@ them, **dbt** cleans, tests and models them into a star schema, and the results 
 next-day peak demand forecast and a Streamlit dashboard. GitHub Actions tests every change and refreshes
 the data every week.
 
-**Live dashboard:** _link added after deployment_ · **Data catalogue & lineage (dbt docs):** _link added after deployment_
+**Live dashboard:** [uk-energy-pipeline-ayushszode.streamlit.app](https://uk-energy-pipeline-ayushszode.streamlit.app) · **Data catalogue & lineage (dbt docs):** _published with GitHub Pages_
 
 ---
 

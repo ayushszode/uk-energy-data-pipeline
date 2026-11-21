@@ -70,10 +70,10 @@ if page == "Overview":
     last_year = int(complete["year"].max())
     ly = complete[complete["year"] == last_year]
     c1, c2, c3, c4 = st.columns(4)
-    kpi(c1, f"Average daily peak ({last_year})", f"{ly['peak_demand_mw'].mean():,.0f} MW")
-    kpi(c2, f"Average carbon intensity ({last_year})", f"{ly['avg_intensity'].mean():.0f} g/kWh",
-        "Grams of CO2 per kWh of electricity generated.")
-    kpi(c3, f"Wind + solar share ({last_year})", f"{ly['avg_wind_solar_pct'].mean():.1f}%")
+    kpi(c1, f"Daily peak, {last_year} avg", f"{ly['peak_demand_mw'].mean() / 1000:.1f} GW")
+    kpi(c2, f"Carbon, {last_year} avg", f"{ly['avg_intensity'].mean():.0f} g",
+        "Average carbon intensity in grams of CO2 per kWh of electricity generated.")
+    kpi(c3, f"Wind + solar, {last_year}", f"{ly['avg_wind_solar_pct'].mean():.0f}%")
     kpi(c4, "Days of data", f"{len(daily):,}")
 
     d = complete.set_index("settlement_date").sort_index()
@@ -170,8 +170,10 @@ elif page == "Best time to use power":
         cols = st.columns(len(best))
         for col, season in zip(cols, [s for s in SEASONS if s in best]):
             b = best[season]
-            col.metric(season, f"Cleanest ~{b['cleanest_hour']:02d}:00",
-                       f"{b['cleanest'] - b['dirtiest']:.0f} g/kWh vs ~{b['dirtiest_hour']:02d}:00", delta_color="inverse")
+            col.metric(f"{season}: cleanest hour", f"{b['cleanest_hour']:02d}:00",
+                       f"{b['cleanest'] - b['dirtiest']:.0f} g vs {b['dirtiest_hour']:02d}:00", delta_color="inverse",
+                       help=f"Average {b['cleanest']:.0f} g/kWh at {b['cleanest_hour']:02d}:00 against "
+                            f"{b['dirtiest']:.0f} g/kWh at {b['dirtiest_hour']:02d}:00 (dirtiest hour).")
 
     hh = csv("half_hourly", ("settlement_date", "period_start_local"))
     day = st.date_input("Look at one day", value=hh["settlement_date"].max().date(),
@@ -258,12 +260,16 @@ elif page == "Data quality":
             st.dataframe(pd.DataFrame(q["warnings"]), hide_index=True)
     dq = findings.get("data_quality", {})
     if dq:
-        st.subheader("What the pipeline fixed")
+        st.subheader("What the pipeline checks and handles")
+        formats = ", ".join(f"`{r['format']}` ({r['rows']:,} rows)" for r in dq["date_formats"])
         st.markdown(
-            f"- **{dq['repeated_rows_removed']:,}** repeated demand rows removed\n"
-            f"- **{dq['unparsed_dates']:,}** dates that could not be parsed\n"
-            f"- **{dq['forecast_rows_excluded']:,}** forecast rows excluded (only actuals kept)\n"
-            f"- Date formats found: " + ", ".join(f"{r['format']} ({r['rows']:,})" for r in dq["date_formats"]))
+            f"- **{len(dq['date_formats'])} different date formats** in NESO's yearly files, all unified: {formats}\n"
+            f"- **{dq['unparsed_dates']:,} dates** left unparsed and **{dq['repeated_rows_removed']:,} repeated rows** "
+            f"after staging (both are tested)\n"
+            f"- **{dq['half_hours_missing_intensity']:,} half hours** without carbon data, from two outages at the "
+            f"source; reported as a warning, not hidden\n"
+            f"- NESO interconnector flows vs the API imports share: correlation "
+            f"**{findings.get('corr_interconnector_imports')}** (confirms the sign convention)")
     st.subheader("Clock-change days")
     st.write("Settlement periods count from UK midnight, so the day the clocks go forward has 46 half hours "
              "and the day they go back has 50. A dbt test checks every day has the right number.")
@@ -290,5 +296,5 @@ GitHub Actions runs the tests on every change and refreshes the data every week.
 - [Open-Meteo](https://open-meteo.com) - historical weather (CC BY 4.0)
 - [GOV.UK bank holidays](https://www.gov.uk/bank-holidays) (Open Government Licence v3.0)
 
-**Code:** [github.com/ayushszode/uk-energy-data-pipeline](https://github.com/ayushszode/uk-energy-data-pipeline)
+**Code:** [github.com/ayushszode/uk-energy-data-pipeline](https://github.com/ayushszode/uk-energy-data-pipeline) · built by Ayush Zode
 """)
