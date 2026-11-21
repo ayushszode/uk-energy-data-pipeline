@@ -1,0 +1,1819 @@
+Date,Series,Peak Demand MW
+2026-01-01,Actual,35082.0
+2026-01-02,Actual,41156.0
+2026-01-03,Actual,40792.0
+2026-01-04,Actual,43377.0
+2026-01-05,Actual,47382.0
+2026-01-06,Actual,45444.0
+2026-01-07,Actual,45281.0
+2026-01-08,Actual,44525.0
+2026-01-09,Actual,44353.0
+2026-01-10,Actual,42619.0
+2026-01-11,Actual,39844.0
+2026-01-12,Actual,40770.0
+2026-01-13,Actual,42685.0
+2026-01-14,Actual,42724.0
+2026-01-15,Actual,42939.0
+2026-01-16,Actual,40697.0
+2026-01-17,Actual,38145.0
+2026-01-18,Actual,39955.0
+2026-01-19,Actual,42017.0
+2026-01-20,Actual,39417.0
+2026-01-21,Actual,40109.0
+2026-01-22,Actual,40378.0
+2026-01-23,Actual,38967.0
+2026-01-24,Actual,36221.0
+2026-01-25,Actual,39605.0
+2026-01-26,Actual,41981.0
+2026-01-27,Actual,40787.0
+2026-01-28,Actual,42173.0
+2026-01-29,Actual,42235.0
+2026-01-30,Actual,40040.0
+2026-01-31,Actual,37350.0
+2026-02-01,Actual,40064.0
+2026-02-02,Actual,41660.0
+2026-02-03,Actual,43677.0
+2026-02-04,Actual,41979.0
+2026-02-05,Actual,40833.0
+2026-02-06,Actual,40629.0
+2026-02-07,Actual,36912.0
+2026-02-08,Actual,38167.0
+2026-02-09,Actual,40747.0
+2026-02-10,Actual,41313.0
+2026-02-11,Actual,40187.0
+2026-02-12,Actual,41425.0
+2026-02-13,Actual,40125.0
+2026-02-14,Actual,38865.0
+2026-02-15,Actual,38912.0
+2026-02-16,Actual,40345.0
+2026-02-17,Actual,42687.0
+2026-02-18,Actual,40945.0
+2026-02-19,Actual,43029.0
+2026-02-20,Actual,37542.0
+2026-02-21,Actual,34623.0
+2026-02-22,Actual,34377.0
+2026-02-23,Actual,39218.0
+2026-02-24,Actual,36295.0
+2026-02-25,Actual,36165.0
+2026-02-26,Actual,36507.0
+2026-02-27,Actual,37110.0
+2026-02-28,Actual,35522.0
+2026-03-01,Actual,34652.0
+2026-03-02,Actual,37120.0
+2026-03-03,Actual,38237.0
+2026-03-04,Actual,37683.0
+2026-03-05,Actual,37588.0
+2026-03-06,Actual,38209.0
+2026-03-07,Actual,35700.0
+2026-03-08,Actual,37137.0
+2026-03-09,Actual,38050.0
+2026-03-10,Actual,35553.0
+2026-03-11,Actual,35470.0
+2026-03-12,Actual,36995.0
+2026-03-13,Actual,36995.0
+2026-03-14,Actual,35019.0
+2026-03-15,Actual,33291.0
+2026-03-16,Actual,37259.0
+2026-03-17,Actual,35453.0
+2026-03-18,Actual,36164.0
+2026-03-19,Actual,36241.0
+2026-03-20,Actual,34778.0
+2026-03-21,Actual,32654.0
+2026-03-22,Actual,33692.0
+2026-03-23,Actual,35606.0
+2026-03-24,Actual,35651.0
+2026-03-25,Actual,37244.0
+2026-03-26,Actual,38146.0
+2026-03-27,Actual,35441.0
+2026-03-28,Actual,32078.0
+2026-03-29,Actual,31432.0
+2026-03-30,Actual,33939.0
+2026-03-31,Actual,32789.0
+2026-04-01,Actual,33294.0
+2026-04-02,Actual,32223.0
+2026-04-03,Actual,28583.0
+2026-04-04,Actual,27469.0
+2026-04-05,Actual,28246.0
+2026-04-06,Actual,29644.0
+2026-04-07,Actual,30160.0
+2026-04-08,Actual,31493.0
+2026-04-09,Actual,29596.0
+2026-04-10,Actual,29378.0
+2026-04-11,Actual,28083.0
+2026-04-12,Actual,29051.0
+2026-04-13,Actual,32880.0
+2026-04-14,Actual,32503.0
+2026-04-15,Actual,29837.0
+2026-04-16,Actual,31570.0
+2026-04-17,Actual,28571.0
+2026-04-18,Actual,28021.0
+2026-04-19,Actual,29513.0
+2026-04-20,Actual,31339.0
+2026-04-21,Actual,30365.0
+2026-04-22,Actual,30333.0
+2026-04-23,Actual,29510.0
+2026-04-24,Actual,28895.0
+2026-04-25,Actual,27231.0
+2026-04-26,Actual,29032.0
+2026-04-27,Actual,31437.0
+2026-04-28,Actual,29931.0
+2026-04-29,Actual,28281.0
+2026-04-30,Actual,28517.0
+2026-05-01,Actual,27816.0
+2026-05-02,Actual,27339.0
+2026-05-03,Actual,27426.0
+2026-05-04,Actual,28042.0
+2026-05-05,Actual,30223.0
+2026-05-06,Actual,31215.0
+2026-05-07,Actual,30297.0
+2026-05-08,Actual,29039.0
+2026-05-09,Actual,25266.0
+2026-05-10,Actual,26537.0
+2026-05-11,Actual,30012.0
+2026-05-12,Actual,28294.0
+2026-05-13,Actual,30050.0
+2026-05-14,Actual,29714.0
+2026-05-15,Actual,29826.0
+2026-05-16,Actual,27924.0
+2026-05-17,Actual,27642.0
+2026-05-18,Actual,30335.0
+2026-05-19,Actual,28755.0
+2026-05-20,Actual,28229.0
+2026-05-21,Actual,28232.0
+2026-05-22,Actual,26481.0
+2026-05-23,Actual,24936.0
+2026-05-24,Actual,25620.0
+2026-05-25,Actual,27532.0
+2026-05-26,Actual,29734.0
+2026-05-27,Actual,27219.0
+2026-05-28,Actual,28803.0
+2026-05-29,Actual,26014.0
+2026-05-30,Actual,24980.0
+2026-05-31,Actual,24620.0
+2026-06-01,Actual,29216.0
+2026-06-02,Actual,26921.0
+2026-06-03,Actual,26695.0
+2026-06-04,Actual,26280.0
+2026-06-05,Actual,26862.0
+2026-06-06,Actual,25632.0
+2026-06-07,Actual,25449.0
+2026-06-08,Actual,27307.0
+2026-06-09,Actual,26510.0
+2026-06-10,Actual,27123.0
+2026-06-11,Actual,29632.0
+2026-06-12,Actual,24728.0
+2026-06-13,Actual,23716.0
+2026-06-14,Actual,26056.0
+2026-06-15,Actual,28362.0
+2026-06-16,Actual,28239.0
+2026-06-17,Actual,27774.0
+2026-06-18,Actual,28517.0
+2026-06-19,Actual,27350.0
+2026-06-20,Actual,25444.0
+2026-06-21,Actual,25939.0
+2026-06-22,Actual,30228.0
+2026-06-23,Actual,30024.0
+2026-06-24,Actual,31313.0
+2026-06-25,Actual,31750.0
+2026-06-26,Actual,29322.0
+2026-06-27,Actual,26164.0
+2026-06-28,Actual,24297.0
+2026-06-29,Actual,27447.0
+2026-06-30,Actual,28359.0
+2026-07-01,Actual,26463.0
+2026-07-02,Actual,26103.0
+2026-07-03,Actual,26621.0
+2026-07-04,Actual,24143.0
+2026-07-05,Actual,26237.0
+2026-07-06,Actual,28183.0
+2026-07-07,Actual,30049.0
+2026-07-08,Actual,30974.0
+2026-07-09,Actual,30591.0
+2026-07-10,Actual,29036.0
+2026-07-11,Actual,26415.0
+2026-07-12,Actual,25217.0
+2026-07-13,Actual,27123.0
+2026-07-14,Actual,28447.0
+2026-07-15,Actual,28705.0
+2026-07-16,Actual,28574.0
+2026-07-17,Actual,27285.0
+2026-07-18,Actual,24166.0
+2026-07-19,Actual,25466.0
+2026-07-20,Actual,27602.0
+2026-07-21,Actual,27666.0
+2026-07-22,Actual,28555.0
+2026-07-23,Actual,28254.0
+2026-07-24,Actual,26268.0
+2026-07-25,Actual,24905.0
+2026-07-26,Actual,23995.0
+2026-07-27,Actual,28428.0
+2026-07-28,Actual,28340.0
+2026-07-29,Actual,29393.0
+2026-07-30,Actual,27717.0
+2026-07-31,Actual,26728.0
+2026-08-01,Actual,24212.0
+2026-08-02,Actual,25316.0
+2026-08-03,Actual,28343.0
+2026-08-04,Actual,27994.0
+2026-08-05,Actual,24668.0
+2026-08-06,Actual,28471.0
+2026-08-07,Actual,25882.0
+2026-08-08,Actual,24804.0
+2026-08-09,Actual,25730.0
+2026-08-10,Actual,28654.0
+2026-08-11,Actual,28033.0
+2026-08-12,Actual,29759.0
+2026-08-13,Actual,30766.0
+2026-08-14,Actual,29306.0
+2026-08-15,Actual,25853.0
+2026-08-16,Actual,26550.0
+2026-08-17,Actual,29334.0
+2026-08-18,Actual,28850.0
+2026-08-19,Actual,28793.0
+2026-08-20,Actual,28479.0
+2026-08-21,Actual,27222.0
+2026-08-22,Actual,25904.0
+2026-08-23,Actual,26373.0
+2026-08-24,Actual,27912.0
+2026-08-25,Actual,28376.0
+2026-08-26,Actual,29857.0
+2026-08-27,Actual,29504.0
+2026-08-28,Actual,27596.0
+2026-08-29,Actual,27134.0
+2026-08-30,Actual,26507.0
+2026-08-31,Actual,27122.0
+2026-09-01,Actual,30558.0
+2026-09-02,Actual,30399.0
+2026-09-03,Actual,29688.0
+2026-09-04,Actual,26917.0
+2026-09-05,Actual,26849.0
+2026-09-06,Actual,26116.0
+2026-09-07,Actual,29045.0
+2026-09-08,Actual,28632.0
+2026-09-09,Actual,31374.0
+2026-09-10,Actual,29431.0
+2026-09-11,Actual,30145.0
+2026-09-12,Actual,27130.0
+2026-09-13,Actual,29313.0
+2026-09-14,Actual,30418.0
+2026-09-15,Actual,30208.0
+2026-09-16,Actual,30803.0
+2026-09-17,Actual,29722.0
+2026-09-18,Actual,28175.0
+2026-09-19,Actual,26473.0
+2026-09-20,Actual,28938.0
+2026-09-21,Actual,32254.0
+2026-09-22,Actual,31856.0
+2026-09-23,Actual,31805.0
+2026-09-24,Actual,31595.0
+2026-09-25,Actual,30978.0
+2026-09-26,Actual,27733.0
+2026-09-27,Actual,29476.0
+2026-09-28,Actual,32974.0
+2026-09-29,Actual,31828.0
+2026-09-30,Actual,31694.0
+2026-10-01,Actual,31946.0
+2026-10-02,Actual,28278.0
+2026-10-03,Actual,29356.0
+2026-10-04,Actual,29595.0
+2026-10-05,Actual,31820.0
+2026-10-06,Actual,32890.0
+2026-10-07,Actual,33681.0
+2026-10-08,Actual,34044.0
+2026-10-09,Actual,30952.0
+2026-10-10,Actual,29316.0
+2026-10-11,Actual,32573.0
+2026-10-12,Actual,34694.0
+2026-10-13,Actual,32553.0
+2026-10-14,Actual,31758.0
+2026-10-15,Actual,34762.0
+2026-10-16,Actual,33310.0
+2026-10-17,Actual,33232.0
+2026-10-18,Actual,33631.0
+2026-10-19,Actual,36636.0
+2026-10-20,Actual,37009.0
+2026-10-21,Actual,35717.0
+2026-10-22,Actual,36588.0
+2026-10-23,Actual,34020.0
+2026-10-24,Actual,33270.0
+2026-10-25,Actual,33049.0
+2026-10-26,Actual,36226.0
+2026-10-27,Actual,35714.0
+2026-10-28,Actual,37514.0
+2026-10-29,Actual,36712.0
+2026-10-30,Actual,35509.0
+2026-01-01,Yesterday,38265.0
+2026-01-02,Yesterday,35082.0
+2026-01-03,Yesterday,41156.0
+2026-01-04,Yesterday,40792.0
+2026-01-05,Yesterday,43377.0
+2026-01-06,Yesterday,47382.0
+2026-01-07,Yesterday,45444.0
+2026-01-08,Yesterday,45281.0
+2026-01-09,Yesterday,44525.0
+2026-01-10,Yesterday,44353.0
+2026-01-11,Yesterday,42619.0
+2026-01-12,Yesterday,39844.0
+2026-01-13,Yesterday,40770.0
+2026-01-14,Yesterday,42685.0
+2026-01-15,Yesterday,42724.0
+2026-01-16,Yesterday,42939.0
+2026-01-17,Yesterday,40697.0
+2026-01-18,Yesterday,38145.0
+2026-01-19,Yesterday,39955.0
+2026-01-20,Yesterday,42017.0
+2026-01-21,Yesterday,39417.0
+2026-01-22,Yesterday,40109.0
+2026-01-23,Yesterday,40378.0
+2026-01-24,Yesterday,38967.0
+2026-01-25,Yesterday,36221.0
+2026-01-26,Yesterday,39605.0
+2026-01-27,Yesterday,41981.0
+2026-01-28,Yesterday,40787.0
+2026-01-29,Yesterday,42173.0
+2026-01-30,Yesterday,42235.0
+2026-01-31,Yesterday,40040.0
+2026-02-01,Yesterday,37350.0
+2026-02-02,Yesterday,40064.0
+2026-02-03,Yesterday,41660.0
+2026-02-04,Yesterday,43677.0
+2026-02-05,Yesterday,41979.0
+2026-02-06,Yesterday,40833.0
+2026-02-07,Yesterday,40629.0
+2026-02-08,Yesterday,36912.0
+2026-02-09,Yesterday,38167.0
+2026-02-10,Yesterday,40747.0
+2026-02-11,Yesterday,41313.0
+2026-02-12,Yesterday,40187.0
+2026-02-13,Yesterday,41425.0
+2026-02-14,Yesterday,40125.0
+2026-02-15,Yesterday,38865.0
+2026-02-16,Yesterday,38912.0
+2026-02-17,Yesterday,40345.0
+2026-02-18,Yesterday,42687.0
+2026-02-19,Yesterday,40945.0
+2026-02-20,Yesterday,43029.0
+2026-02-21,Yesterday,37542.0
+2026-02-22,Yesterday,34623.0
+2026-02-23,Yesterday,34377.0
+2026-02-24,Yesterday,39218.0
+2026-02-25,Yesterday,36295.0
+2026-02-26,Yesterday,36165.0
+2026-02-27,Yesterday,36507.0
+2026-02-28,Yesterday,37110.0
+2026-03-01,Yesterday,35522.0
+2026-03-02,Yesterday,34652.0
+2026-03-03,Yesterday,37120.0
+2026-03-04,Yesterday,38237.0
+2026-03-05,Yesterday,37683.0
+2026-03-06,Yesterday,37588.0
+2026-03-07,Yesterday,38209.0
+2026-03-08,Yesterday,35700.0
+2026-03-09,Yesterday,37137.0
+2026-03-10,Yesterday,38050.0
+2026-03-11,Yesterday,35553.0
+2026-03-12,Yesterday,35470.0
+2026-03-13,Yesterday,36995.0
+2026-03-14,Yesterday,36995.0
+2026-03-15,Yesterday,35019.0
+2026-03-16,Yesterday,33291.0
+2026-03-17,Yesterday,37259.0
+2026-03-18,Yesterday,35453.0
+2026-03-19,Yesterday,36164.0
+2026-03-20,Yesterday,36241.0
+2026-03-21,Yesterday,34778.0
+2026-03-22,Yesterday,32654.0
+2026-03-23,Yesterday,33692.0
+2026-03-24,Yesterday,35606.0
+2026-03-25,Yesterday,35651.0
+2026-03-26,Yesterday,37244.0
+2026-03-27,Yesterday,38146.0
+2026-03-28,Yesterday,35441.0
+2026-03-29,Yesterday,32078.0
+2026-03-30,Yesterday,31432.0
+2026-03-31,Yesterday,33939.0
+2026-04-01,Yesterday,32789.0
+2026-04-02,Yesterday,33294.0
+2026-04-03,Yesterday,32223.0
+2026-04-04,Yesterday,28583.0
+2026-04-05,Yesterday,27469.0
+2026-04-06,Yesterday,28246.0
+2026-04-07,Yesterday,29644.0
+2026-04-08,Yesterday,30160.0
+2026-04-09,Yesterday,31493.0
+2026-04-10,Yesterday,29596.0
+2026-04-11,Yesterday,29378.0
+2026-04-12,Yesterday,28083.0
+2026-04-13,Yesterday,29051.0
+2026-04-14,Yesterday,32880.0
+2026-04-15,Yesterday,32503.0
+2026-04-16,Yesterday,29837.0
+2026-04-17,Yesterday,31570.0
+2026-04-18,Yesterday,28571.0
+2026-04-19,Yesterday,28021.0
+2026-04-20,Yesterday,29513.0
+2026-04-21,Yesterday,31339.0
+2026-04-22,Yesterday,30365.0
+2026-04-23,Yesterday,30333.0
+2026-04-24,Yesterday,29510.0
+2026-04-25,Yesterday,28895.0
+2026-04-26,Yesterday,27231.0
+2026-04-27,Yesterday,29032.0
+2026-04-28,Yesterday,31437.0
+2026-04-29,Yesterday,29931.0
+2026-04-30,Yesterday,28281.0
+2026-05-01,Yesterday,28517.0
+2026-05-02,Yesterday,27816.0
+2026-05-03,Yesterday,27339.0
+2026-05-04,Yesterday,27426.0
+2026-05-05,Yesterday,28042.0
+2026-05-06,Yesterday,30223.0
+2026-05-07,Yesterday,31215.0
+2026-05-08,Yesterday,30297.0
+2026-05-09,Yesterday,29039.0
+2026-05-10,Yesterday,25266.0
+2026-05-11,Yesterday,26537.0
+2026-05-12,Yesterday,30012.0
+2026-05-13,Yesterday,28294.0
+2026-05-14,Yesterday,30050.0
+2026-05-15,Yesterday,29714.0
+2026-05-16,Yesterday,29826.0
+2026-05-17,Yesterday,27924.0
+2026-05-18,Yesterday,27642.0
+2026-05-19,Yesterday,30335.0
+2026-05-20,Yesterday,28755.0
+2026-05-21,Yesterday,28229.0
+2026-05-22,Yesterday,28232.0
+2026-05-23,Yesterday,26481.0
+2026-05-24,Yesterday,24936.0
+2026-05-25,Yesterday,25620.0
+2026-05-26,Yesterday,27532.0
+2026-05-27,Yesterday,29734.0
+2026-05-28,Yesterday,27219.0
+2026-05-29,Yesterday,28803.0
+2026-05-30,Yesterday,26014.0
+2026-05-31,Yesterday,24980.0
+2026-06-01,Yesterday,24620.0
+2026-06-02,Yesterday,29216.0
+2026-06-03,Yesterday,26921.0
+2026-06-04,Yesterday,26695.0
+2026-06-05,Yesterday,26280.0
+2026-06-06,Yesterday,26862.0
+2026-06-07,Yesterday,25632.0
+2026-06-08,Yesterday,25449.0
+2026-06-09,Yesterday,27307.0
+2026-06-10,Yesterday,26510.0
+2026-06-11,Yesterday,27123.0
+2026-06-12,Yesterday,29632.0
+2026-06-13,Yesterday,24728.0
+2026-06-14,Yesterday,23716.0
+2026-06-15,Yesterday,26056.0
+2026-06-16,Yesterday,28362.0
+2026-06-17,Yesterday,28239.0
+2026-06-18,Yesterday,27774.0
+2026-06-19,Yesterday,28517.0
+2026-06-20,Yesterday,27350.0
+2026-06-21,Yesterday,25444.0
+2026-06-22,Yesterday,25939.0
+2026-06-23,Yesterday,30228.0
+2026-06-24,Yesterday,30024.0
+2026-06-25,Yesterday,31313.0
+2026-06-26,Yesterday,31750.0
+2026-06-27,Yesterday,29322.0
+2026-06-28,Yesterday,26164.0
+2026-06-29,Yesterday,24297.0
+2026-06-30,Yesterday,27447.0
+2026-07-01,Yesterday,28359.0
+2026-07-02,Yesterday,26463.0
+2026-07-03,Yesterday,26103.0
+2026-07-04,Yesterday,26621.0
+2026-07-05,Yesterday,24143.0
+2026-07-06,Yesterday,26237.0
+2026-07-07,Yesterday,28183.0
+2026-07-08,Yesterday,30049.0
+2026-07-09,Yesterday,30974.0
+2026-07-10,Yesterday,30591.0
+2026-07-11,Yesterday,29036.0
+2026-07-12,Yesterday,26415.0
+2026-07-13,Yesterday,25217.0
+2026-07-14,Yesterday,27123.0
+2026-07-15,Yesterday,28447.0
+2026-07-16,Yesterday,28705.0
+2026-07-17,Yesterday,28574.0
+2026-07-18,Yesterday,27285.0
+2026-07-19,Yesterday,24166.0
+2026-07-20,Yesterday,25466.0
+2026-07-21,Yesterday,27602.0
+2026-07-22,Yesterday,27666.0
+2026-07-23,Yesterday,28555.0
+2026-07-24,Yesterday,28254.0
+2026-07-25,Yesterday,26268.0
+2026-07-26,Yesterday,24905.0
+2026-07-27,Yesterday,23995.0
+2026-07-28,Yesterday,28428.0
+2026-07-29,Yesterday,28340.0
+2026-07-30,Yesterday,29393.0
+2026-07-31,Yesterday,27717.0
+2026-08-01,Yesterday,26728.0
+2026-08-02,Yesterday,24212.0
+2026-08-03,Yesterday,25316.0
+2026-08-04,Yesterday,28343.0
+2026-08-05,Yesterday,27994.0
+2026-08-06,Yesterday,24668.0
+2026-08-07,Yesterday,28471.0
+2026-08-08,Yesterday,25882.0
+2026-08-09,Yesterday,24804.0
+2026-08-10,Yesterday,25730.0
+2026-08-11,Yesterday,28654.0
+2026-08-12,Yesterday,28033.0
+2026-08-13,Yesterday,29759.0
+2026-08-14,Yesterday,30766.0
+2026-08-15,Yesterday,29306.0
+2026-08-16,Yesterday,25853.0
+2026-08-17,Yesterday,26550.0
+2026-08-18,Yesterday,29334.0
+2026-08-19,Yesterday,28850.0
+2026-08-20,Yesterday,28793.0
+2026-08-21,Yesterday,28479.0
+2026-08-22,Yesterday,27222.0
+2026-08-23,Yesterday,25904.0
+2026-08-24,Yesterday,26373.0
+2026-08-25,Yesterday,27912.0
+2026-08-26,Yesterday,28376.0
+2026-08-27,Yesterday,29857.0
+2026-08-28,Yesterday,29504.0
+2026-08-29,Yesterday,27596.0
+2026-08-30,Yesterday,27134.0
+2026-08-31,Yesterday,26507.0
+2026-09-01,Yesterday,27122.0
+2026-09-02,Yesterday,30558.0
+2026-09-03,Yesterday,30399.0
+2026-09-04,Yesterday,29688.0
+2026-09-05,Yesterday,26917.0
+2026-09-06,Yesterday,26849.0
+2026-09-07,Yesterday,26116.0
+2026-09-08,Yesterday,29045.0
+2026-09-09,Yesterday,28632.0
+2026-09-10,Yesterday,31374.0
+2026-09-11,Yesterday,29431.0
+2026-09-12,Yesterday,30145.0
+2026-09-13,Yesterday,27130.0
+2026-09-14,Yesterday,29313.0
+2026-09-15,Yesterday,30418.0
+2026-09-16,Yesterday,30208.0
+2026-09-17,Yesterday,30803.0
+2026-09-18,Yesterday,29722.0
+2026-09-19,Yesterday,28175.0
+2026-09-20,Yesterday,26473.0
+2026-09-21,Yesterday,28938.0
+2026-09-22,Yesterday,32254.0
+2026-09-23,Yesterday,31856.0
+2026-09-24,Yesterday,31805.0
+2026-09-25,Yesterday,31595.0
+2026-09-26,Yesterday,30978.0
+2026-09-27,Yesterday,27733.0
+2026-09-28,Yesterday,29476.0
+2026-09-29,Yesterday,32974.0
+2026-09-30,Yesterday,31828.0
+2026-10-01,Yesterday,31694.0
+2026-10-02,Yesterday,31946.0
+2026-10-03,Yesterday,28278.0
+2026-10-04,Yesterday,29356.0
+2026-10-05,Yesterday,29595.0
+2026-10-06,Yesterday,31820.0
+2026-10-07,Yesterday,32890.0
+2026-10-08,Yesterday,33681.0
+2026-10-09,Yesterday,34044.0
+2026-10-10,Yesterday,30952.0
+2026-10-11,Yesterday,29316.0
+2026-10-12,Yesterday,32573.0
+2026-10-13,Yesterday,34694.0
+2026-10-14,Yesterday,32553.0
+2026-10-15,Yesterday,31758.0
+2026-10-16,Yesterday,34762.0
+2026-10-17,Yesterday,33310.0
+2026-10-18,Yesterday,33232.0
+2026-10-19,Yesterday,33631.0
+2026-10-20,Yesterday,36636.0
+2026-10-21,Yesterday,37009.0
+2026-10-22,Yesterday,35717.0
+2026-10-23,Yesterday,36588.0
+2026-10-24,Yesterday,34020.0
+2026-10-25,Yesterday,33270.0
+2026-10-26,Yesterday,33049.0
+2026-10-27,Yesterday,36226.0
+2026-10-28,Yesterday,35714.0
+2026-10-29,Yesterday,37514.0
+2026-10-30,Yesterday,36712.0
+2026-01-01,Same day last week,30422.0
+2026-01-02,Same day last week,33010.0
+2026-01-03,Same day last week,35657.0
+2026-01-04,Same day last week,37016.0
+2026-01-05,Same day last week,38939.0
+2026-01-06,Same day last week,39390.0
+2026-01-07,Same day last week,38265.0
+2026-01-08,Same day last week,35082.0
+2026-01-09,Same day last week,41156.0
+2026-01-10,Same day last week,40792.0
+2026-01-11,Same day last week,43377.0
+2026-01-12,Same day last week,47382.0
+2026-01-13,Same day last week,45444.0
+2026-01-14,Same day last week,45281.0
+2026-01-15,Same day last week,44525.0
+2026-01-16,Same day last week,44353.0
+2026-01-17,Same day last week,42619.0
+2026-01-18,Same day last week,39844.0
+2026-01-19,Same day last week,40770.0
+2026-01-20,Same day last week,42685.0
+2026-01-21,Same day last week,42724.0
+2026-01-22,Same day last week,42939.0
+2026-01-23,Same day last week,40697.0
+2026-01-24,Same day last week,38145.0
+2026-01-25,Same day last week,39955.0
+2026-01-26,Same day last week,42017.0
+2026-01-27,Same day last week,39417.0
+2026-01-28,Same day last week,40109.0
+2026-01-29,Same day last week,40378.0
+2026-01-30,Same day last week,38967.0
+2026-01-31,Same day last week,36221.0
+2026-02-01,Same day last week,39605.0
+2026-02-02,Same day last week,41981.0
+2026-02-03,Same day last week,40787.0
+2026-02-04,Same day last week,42173.0
+2026-02-05,Same day last week,42235.0
+2026-02-06,Same day last week,40040.0
+2026-02-07,Same day last week,37350.0
+2026-02-08,Same day last week,40064.0
+2026-02-09,Same day last week,41660.0
+2026-02-10,Same day last week,43677.0
+2026-02-11,Same day last week,41979.0
+2026-02-12,Same day last week,40833.0
+2026-02-13,Same day last week,40629.0
+2026-02-14,Same day last week,36912.0
+2026-02-15,Same day last week,38167.0
+2026-02-16,Same day last week,40747.0
+2026-02-17,Same day last week,41313.0
+2026-02-18,Same day last week,40187.0
+2026-02-19,Same day last week,41425.0
+2026-02-20,Same day last week,40125.0
+2026-02-21,Same day last week,38865.0
+2026-02-22,Same day last week,38912.0
+2026-02-23,Same day last week,40345.0
+2026-02-24,Same day last week,42687.0
+2026-02-25,Same day last week,40945.0
+2026-02-26,Same day last week,43029.0
+2026-02-27,Same day last week,37542.0
+2026-02-28,Same day last week,34623.0
+2026-03-01,Same day last week,34377.0
+2026-03-02,Same day last week,39218.0
+2026-03-03,Same day last week,36295.0
+2026-03-04,Same day last week,36165.0
+2026-03-05,Same day last week,36507.0
+2026-03-06,Same day last week,37110.0
+2026-03-07,Same day last week,35522.0
+2026-03-08,Same day last week,34652.0
+2026-03-09,Same day last week,37120.0
+2026-03-10,Same day last week,38237.0
+2026-03-11,Same day last week,37683.0
+2026-03-12,Same day last week,37588.0
+2026-03-13,Same day last week,38209.0
+2026-03-14,Same day last week,35700.0
+2026-03-15,Same day last week,37137.0
+2026-03-16,Same day last week,38050.0
+2026-03-17,Same day last week,35553.0
+2026-03-18,Same day last week,35470.0
+2026-03-19,Same day last week,36995.0
+2026-03-20,Same day last week,36995.0
+2026-03-21,Same day last week,35019.0
+2026-03-22,Same day last week,33291.0
+2026-03-23,Same day last week,37259.0
+2026-03-24,Same day last week,35453.0
+2026-03-25,Same day last week,36164.0
+2026-03-26,Same day last week,36241.0
+2026-03-27,Same day last week,34778.0
+2026-03-28,Same day last week,32654.0
+2026-03-29,Same day last week,33692.0
+2026-03-30,Same day last week,35606.0
+2026-03-31,Same day last week,35651.0
+2026-04-01,Same day last week,37244.0
+2026-04-02,Same day last week,38146.0
+2026-04-03,Same day last week,35441.0
+2026-04-04,Same day last week,32078.0
+2026-04-05,Same day last week,31432.0
+2026-04-06,Same day last week,33939.0
+2026-04-07,Same day last week,32789.0
+2026-04-08,Same day last week,33294.0
+2026-04-09,Same day last week,32223.0
+2026-04-10,Same day last week,28583.0
+2026-04-11,Same day last week,27469.0
+2026-04-12,Same day last week,28246.0
+2026-04-13,Same day last week,29644.0
+2026-04-14,Same day last week,30160.0
+2026-04-15,Same day last week,31493.0
+2026-04-16,Same day last week,29596.0
+2026-04-17,Same day last week,29378.0
+2026-04-18,Same day last week,28083.0
+2026-04-19,Same day last week,29051.0
+2026-04-20,Same day last week,32880.0
+2026-04-21,Same day last week,32503.0
+2026-04-22,Same day last week,29837.0
+2026-04-23,Same day last week,31570.0
+2026-04-24,Same day last week,28571.0
+2026-04-25,Same day last week,28021.0
+2026-04-26,Same day last week,29513.0
+2026-04-27,Same day last week,31339.0
+2026-04-28,Same day last week,30365.0
+2026-04-29,Same day last week,30333.0
+2026-04-30,Same day last week,29510.0
+2026-05-01,Same day last week,28895.0
+2026-05-02,Same day last week,27231.0
+2026-05-03,Same day last week,29032.0
+2026-05-04,Same day last week,31437.0
+2026-05-05,Same day last week,29931.0
+2026-05-06,Same day last week,28281.0
+2026-05-07,Same day last week,28517.0
+2026-05-08,Same day last week,27816.0
+2026-05-09,Same day last week,27339.0
+2026-05-10,Same day last week,27426.0
+2026-05-11,Same day last week,28042.0
+2026-05-12,Same day last week,30223.0
+2026-05-13,Same day last week,31215.0
+2026-05-14,Same day last week,30297.0
+2026-05-15,Same day last week,29039.0
+2026-05-16,Same day last week,25266.0
+2026-05-17,Same day last week,26537.0
+2026-05-18,Same day last week,30012.0
+2026-05-19,Same day last week,28294.0
+2026-05-20,Same day last week,30050.0
+2026-05-21,Same day last week,29714.0
+2026-05-22,Same day last week,29826.0
+2026-05-23,Same day last week,27924.0
+2026-05-24,Same day last week,27642.0
+2026-05-25,Same day last week,30335.0
+2026-05-26,Same day last week,28755.0
+2026-05-27,Same day last week,28229.0
+2026-05-28,Same day last week,28232.0
+2026-05-29,Same day last week,26481.0
+2026-05-30,Same day last week,24936.0
+2026-05-31,Same day last week,25620.0
+2026-06-01,Same day last week,27532.0
+2026-06-02,Same day last week,29734.0
+2026-06-03,Same day last week,27219.0
+2026-06-04,Same day last week,28803.0
+2026-06-05,Same day last week,26014.0
+2026-06-06,Same day last week,24980.0
+2026-06-07,Same day last week,24620.0
+2026-06-08,Same day last week,29216.0
+2026-06-09,Same day last week,26921.0
+2026-06-10,Same day last week,26695.0
+2026-06-11,Same day last week,26280.0
+2026-06-12,Same day last week,26862.0
+2026-06-13,Same day last week,25632.0
+2026-06-14,Same day last week,25449.0
+2026-06-15,Same day last week,27307.0
+2026-06-16,Same day last week,26510.0
+2026-06-17,Same day last week,27123.0
+2026-06-18,Same day last week,29632.0
+2026-06-19,Same day last week,24728.0
+2026-06-20,Same day last week,23716.0
+2026-06-21,Same day last week,26056.0
+2026-06-22,Same day last week,28362.0
+2026-06-23,Same day last week,28239.0
+2026-06-24,Same day last week,27774.0
+2026-06-25,Same day last week,28517.0
+2026-06-26,Same day last week,27350.0
+2026-06-27,Same day last week,25444.0
+2026-06-28,Same day last week,25939.0
+2026-06-29,Same day last week,30228.0
+2026-06-30,Same day last week,30024.0
+2026-07-01,Same day last week,31313.0
+2026-07-02,Same day last week,31750.0
+2026-07-03,Same day last week,29322.0
+2026-07-04,Same day last week,26164.0
+2026-07-05,Same day last week,24297.0
+2026-07-06,Same day last week,27447.0
+2026-07-07,Same day last week,28359.0
+2026-07-08,Same day last week,26463.0
+2026-07-09,Same day last week,26103.0
+2026-07-10,Same day last week,26621.0
+2026-07-11,Same day last week,24143.0
+2026-07-12,Same day last week,26237.0
+2026-07-13,Same day last week,28183.0
+2026-07-14,Same day last week,30049.0
+2026-07-15,Same day last week,30974.0
+2026-07-16,Same day last week,30591.0
+2026-07-17,Same day last week,29036.0
+2026-07-18,Same day last week,26415.0
+2026-07-19,Same day last week,25217.0
+2026-07-20,Same day last week,27123.0
+2026-07-21,Same day last week,28447.0
+2026-07-22,Same day last week,28705.0
+2026-07-23,Same day last week,28574.0
+2026-07-24,Same day last week,27285.0
+2026-07-25,Same day last week,24166.0
+2026-07-26,Same day last week,25466.0
+2026-07-27,Same day last week,27602.0
+2026-07-28,Same day last week,27666.0
+2026-07-29,Same day last week,28555.0
+2026-07-30,Same day last week,28254.0
+2026-07-31,Same day last week,26268.0
+2026-08-01,Same day last week,24905.0
+2026-08-02,Same day last week,23995.0
+2026-08-03,Same day last week,28428.0
+2026-08-04,Same day last week,28340.0
+2026-08-05,Same day last week,29393.0
+2026-08-06,Same day last week,27717.0
+2026-08-07,Same day last week,26728.0
+2026-08-08,Same day last week,24212.0
+2026-08-09,Same day last week,25316.0
+2026-08-10,Same day last week,28343.0
+2026-08-11,Same day last week,27994.0
+2026-08-12,Same day last week,24668.0
+2026-08-13,Same day last week,28471.0
+2026-08-14,Same day last week,25882.0
+2026-08-15,Same day last week,24804.0
+2026-08-16,Same day last week,25730.0
+2026-08-17,Same day last week,28654.0
+2026-08-18,Same day last week,28033.0
+2026-08-19,Same day last week,29759.0
+2026-08-20,Same day last week,30766.0
+2026-08-21,Same day last week,29306.0
+2026-08-22,Same day last week,25853.0
+2026-08-23,Same day last week,26550.0
+2026-08-24,Same day last week,29334.0
+2026-08-25,Same day last week,28850.0
+2026-08-26,Same day last week,28793.0
+2026-08-27,Same day last week,28479.0
+2026-08-28,Same day last week,27222.0
+2026-08-29,Same day last week,25904.0
+2026-08-30,Same day last week,26373.0
+2026-08-31,Same day last week,27912.0
+2026-09-01,Same day last week,28376.0
+2026-09-02,Same day last week,29857.0
+2026-09-03,Same day last week,29504.0
+2026-09-04,Same day last week,27596.0
+2026-09-05,Same day last week,27134.0
+2026-09-06,Same day last week,26507.0
+2026-09-07,Same day last week,27122.0
+2026-09-08,Same day last week,30558.0
+2026-09-09,Same day last week,30399.0
+2026-09-10,Same day last week,29688.0
+2026-09-11,Same day last week,26917.0
+2026-09-12,Same day last week,26849.0
+2026-09-13,Same day last week,26116.0
+2026-09-14,Same day last week,29045.0
+2026-09-15,Same day last week,28632.0
+2026-09-16,Same day last week,31374.0
+2026-09-17,Same day last week,29431.0
+2026-09-18,Same day last week,30145.0
+2026-09-19,Same day last week,27130.0
+2026-09-20,Same day last week,29313.0
+2026-09-21,Same day last week,30418.0
+2026-09-22,Same day last week,30208.0
+2026-09-23,Same day last week,30803.0
+2026-09-24,Same day last week,29722.0
+2026-09-25,Same day last week,28175.0
+2026-09-26,Same day last week,26473.0
+2026-09-27,Same day last week,28938.0
+2026-09-28,Same day last week,32254.0
+2026-09-29,Same day last week,31856.0
+2026-09-30,Same day last week,31805.0
+2026-10-01,Same day last week,31595.0
+2026-10-02,Same day last week,30978.0
+2026-10-03,Same day last week,27733.0
+2026-10-04,Same day last week,29476.0
+2026-10-05,Same day last week,32974.0
+2026-10-06,Same day last week,31828.0
+2026-10-07,Same day last week,31694.0
+2026-10-08,Same day last week,31946.0
+2026-10-09,Same day last week,28278.0
+2026-10-10,Same day last week,29356.0
+2026-10-11,Same day last week,29595.0
+2026-10-12,Same day last week,31820.0
+2026-10-13,Same day last week,32890.0
+2026-10-14,Same day last week,33681.0
+2026-10-15,Same day last week,34044.0
+2026-10-16,Same day last week,30952.0
+2026-10-17,Same day last week,29316.0
+2026-10-18,Same day last week,32573.0
+2026-10-19,Same day last week,34694.0
+2026-10-20,Same day last week,32553.0
+2026-10-21,Same day last week,31758.0
+2026-10-22,Same day last week,34762.0
+2026-10-23,Same day last week,33310.0
+2026-10-24,Same day last week,33232.0
+2026-10-25,Same day last week,33631.0
+2026-10-26,Same day last week,36636.0
+2026-10-27,Same day last week,37009.0
+2026-10-28,Same day last week,35717.0
+2026-10-29,Same day last week,36588.0
+2026-10-30,Same day last week,34020.0
+2026-01-01,"Forecast (ridge, chosen)",37370.0
+2026-01-02,"Forecast (ridge, chosen)",38888.0
+2026-01-03,"Forecast (ridge, chosen)",39523.0
+2026-01-04,"Forecast (ridge, chosen)",41435.0
+2026-01-05,"Forecast (ridge, chosen)",45524.0
+2026-01-06,"Forecast (ridge, chosen)",45692.0
+2026-01-07,"Forecast (ridge, chosen)",44410.0
+2026-01-08,"Forecast (ridge, chosen)",44756.0
+2026-01-09,"Forecast (ridge, chosen)",43465.0
+2026-01-10,"Forecast (ridge, chosen)",42041.0
+2026-01-11,"Forecast (ridge, chosen)",41315.0
+2026-01-12,"Forecast (ridge, chosen)",41528.0
+2026-01-13,"Forecast (ridge, chosen)",41013.0
+2026-01-14,"Forecast (ridge, chosen)",42758.0
+2026-01-15,"Forecast (ridge, chosen)",41527.0
+2026-01-16,"Forecast (ridge, chosen)",40919.0
+2026-01-17,"Forecast (ridge, chosen)",37675.0
+2026-01-18,"Forecast (ridge, chosen)",38332.0
+2026-01-19,"Forecast (ridge, chosen)",41504.0
+2026-01-20,"Forecast (ridge, chosen)",41071.0
+2026-01-21,"Forecast (ridge, chosen)",39912.0
+2026-01-22,"Forecast (ridge, chosen)",39685.0
+2026-01-23,"Forecast (ridge, chosen)",39203.0
+2026-01-24,"Forecast (ridge, chosen)",36720.0
+2026-01-25,"Forecast (ridge, chosen)",37388.0
+2026-01-26,"Forecast (ridge, chosen)",41729.0
+2026-01-27,"Forecast (ridge, chosen)",41234.0
+2026-01-28,"Forecast (ridge, chosen)",41057.0
+2026-01-29,"Forecast (ridge, chosen)",41628.0
+2026-01-30,"Forecast (ridge, chosen)",40037.0
+2026-01-31,"Forecast (ridge, chosen)",37225.0
+2026-02-01,"Forecast (ridge, chosen)",37906.0
+2026-02-02,"Forecast (ridge, chosen)",41574.0
+2026-02-03,"Forecast (ridge, chosen)",41967.0
+2026-02-04,"Forecast (ridge, chosen)",41916.0
+2026-02-05,"Forecast (ridge, chosen)",41070.0
+2026-02-06,"Forecast (ridge, chosen)",39394.0
+2026-02-07,"Forecast (ridge, chosen)",37064.0
+2026-02-08,"Forecast (ridge, chosen)",37116.0
+2026-02-09,"Forecast (ridge, chosen)",40229.0
+2026-02-10,"Forecast (ridge, chosen)",39941.0
+2026-02-11,"Forecast (ridge, chosen)",39712.0
+2026-02-12,"Forecast (ridge, chosen)",39754.0
+2026-02-13,"Forecast (ridge, chosen)",39881.0
+2026-02-14,"Forecast (ridge, chosen)",38058.0
+2026-02-15,"Forecast (ridge, chosen)",38607.0
+2026-02-16,"Forecast (ridge, chosen)",40978.0
+2026-02-17,"Forecast (ridge, chosen)",41329.0
+2026-02-18,"Forecast (ridge, chosen)",41999.0
+2026-02-19,"Forecast (ridge, chosen)",40744.0
+2026-02-20,"Forecast (ridge, chosen)",39497.0
+2026-02-21,"Forecast (ridge, chosen)",34456.0
+2026-02-22,"Forecast (ridge, chosen)",34700.0
+2026-02-23,"Forecast (ridge, chosen)",37502.0
+2026-02-24,"Forecast (ridge, chosen)",37528.0
+2026-02-25,"Forecast (ridge, chosen)",36024.0
+2026-02-26,"Forecast (ridge, chosen)",35701.0
+2026-02-27,"Forecast (ridge, chosen)",34983.0
+2026-02-28,"Forecast (ridge, chosen)",34303.0
+2026-03-01,"Forecast (ridge, chosen)",34588.0
+2026-03-02,"Forecast (ridge, chosen)",36402.0
+2026-03-03,"Forecast (ridge, chosen)",37086.0
+2026-03-04,"Forecast (ridge, chosen)",37394.0
+2026-03-05,"Forecast (ridge, chosen)",36137.0
+2026-03-06,"Forecast (ridge, chosen)",36398.0
+2026-03-07,"Forecast (ridge, chosen)",34686.0
+2026-03-08,"Forecast (ridge, chosen)",35069.0
+2026-03-09,"Forecast (ridge, chosen)",38005.0
+2026-03-10,"Forecast (ridge, chosen)",37370.0
+2026-03-11,"Forecast (ridge, chosen)",36226.0
+2026-03-12,"Forecast (ridge, chosen)",35703.0
+2026-03-13,"Forecast (ridge, chosen)",36133.0
+2026-03-14,"Forecast (ridge, chosen)",34309.0
+2026-03-15,"Forecast (ridge, chosen)",34827.0
+2026-03-16,"Forecast (ridge, chosen)",36288.0
+2026-03-17,"Forecast (ridge, chosen)",35936.0
+2026-03-18,"Forecast (ridge, chosen)",34892.0
+2026-03-19,"Forecast (ridge, chosen)",35241.0
+2026-03-20,"Forecast (ridge, chosen)",34695.0
+2026-03-21,"Forecast (ridge, chosen)",32118.0
+2026-03-22,"Forecast (ridge, chosen)",33154.0
+2026-03-23,"Forecast (ridge, chosen)",35765.0
+2026-03-24,"Forecast (ridge, chosen)",35141.0
+2026-03-25,"Forecast (ridge, chosen)",36468.0
+2026-03-26,"Forecast (ridge, chosen)",36711.0
+2026-03-27,"Forecast (ridge, chosen)",35368.0
+2026-03-28,"Forecast (ridge, chosen)",33201.0
+2026-03-29,"Forecast (ridge, chosen)",32857.0
+2026-03-30,"Forecast (ridge, chosen)",35159.0
+2026-03-31,"Forecast (ridge, chosen)",33970.0
+2026-04-01,"Forecast (ridge, chosen)",33495.0
+2026-04-02,"Forecast (ridge, chosen)",33925.0
+2026-04-03,"Forecast (ridge, chosen)",28601.0
+2026-04-04,"Forecast (ridge, chosen)",28206.0
+2026-04-05,"Forecast (ridge, chosen)",29782.0
+2026-04-06,"Forecast (ridge, chosen)",29353.0
+2026-04-07,"Forecast (ridge, chosen)",30427.0
+2026-04-08,"Forecast (ridge, chosen)",29274.0
+2026-04-09,"Forecast (ridge, chosen)",30437.0
+2026-04-10,"Forecast (ridge, chosen)",30532.0
+2026-04-11,"Forecast (ridge, chosen)",28332.0
+2026-04-12,"Forecast (ridge, chosen)",29252.0
+2026-04-13,"Forecast (ridge, chosen)",32526.0
+2026-04-14,"Forecast (ridge, chosen)",32383.0
+2026-04-15,"Forecast (ridge, chosen)",31336.0
+2026-04-16,"Forecast (ridge, chosen)",30387.0
+2026-04-17,"Forecast (ridge, chosen)",30069.0
+2026-04-18,"Forecast (ridge, chosen)",27290.0
+2026-04-19,"Forecast (ridge, chosen)",29028.0
+2026-04-20,"Forecast (ridge, chosen)",32303.0
+2026-04-21,"Forecast (ridge, chosen)",32001.0
+2026-04-22,"Forecast (ridge, chosen)",31200.0
+2026-04-23,"Forecast (ridge, chosen)",30532.0
+2026-04-24,"Forecast (ridge, chosen)",29008.0
+2026-04-25,"Forecast (ridge, chosen)",26263.0
+2026-04-26,"Forecast (ridge, chosen)",27196.0
+2026-04-27,"Forecast (ridge, chosen)",30202.0
+2026-04-28,"Forecast (ridge, chosen)",31362.0
+2026-04-29,"Forecast (ridge, chosen)",30111.0
+2026-04-30,"Forecast (ridge, chosen)",28286.0
+2026-05-01,"Forecast (ridge, chosen)",27050.0
+2026-05-02,"Forecast (ridge, chosen)",25101.0
+2026-05-03,"Forecast (ridge, chosen)",27172.0
+2026-05-04,"Forecast (ridge, chosen)",27039.0
+2026-05-05,"Forecast (ridge, chosen)",29439.0
+2026-05-06,"Forecast (ridge, chosen)",30852.0
+2026-05-07,"Forecast (ridge, chosen)",30624.0
+2026-05-08,"Forecast (ridge, chosen)",28636.0
+2026-05-09,"Forecast (ridge, chosen)",25939.0
+2026-05-10,"Forecast (ridge, chosen)",27238.0
+2026-05-11,"Forecast (ridge, chosen)",30997.0
+2026-05-12,"Forecast (ridge, chosen)",30646.0
+2026-05-13,"Forecast (ridge, chosen)",30167.0
+2026-05-14,"Forecast (ridge, chosen)",30666.0
+2026-05-15,"Forecast (ridge, chosen)",29244.0
+2026-05-16,"Forecast (ridge, chosen)",27277.0
+2026-05-17,"Forecast (ridge, chosen)",27974.0
+2026-05-18,"Forecast (ridge, chosen)",30586.0
+2026-05-19,"Forecast (ridge, chosen)",29986.0
+2026-05-20,"Forecast (ridge, chosen)",28847.0
+2026-05-21,"Forecast (ridge, chosen)",27789.0
+2026-05-22,"Forecast (ridge, chosen)",27219.0
+2026-05-23,"Forecast (ridge, chosen)",24688.0
+2026-05-24,"Forecast (ridge, chosen)",25516.0
+2026-05-25,"Forecast (ridge, chosen)",25879.0
+2026-05-26,"Forecast (ridge, chosen)",28770.0
+2026-05-27,"Forecast (ridge, chosen)",28879.0
+2026-05-28,"Forecast (ridge, chosen)",27498.0
+2026-05-29,"Forecast (ridge, chosen)",27302.0
+2026-05-30,"Forecast (ridge, chosen)",24126.0
+2026-05-31,"Forecast (ridge, chosen)",25294.0
+2026-06-01,"Forecast (ridge, chosen)",27546.0
+2026-06-02,"Forecast (ridge, chosen)",28202.0
+2026-06-03,"Forecast (ridge, chosen)",27470.0
+2026-06-04,"Forecast (ridge, chosen)",27170.0
+2026-06-05,"Forecast (ridge, chosen)",26080.0
+2026-06-06,"Forecast (ridge, chosen)",24346.0
+2026-06-07,"Forecast (ridge, chosen)",25178.0
+2026-06-08,"Forecast (ridge, chosen)",28119.0
+2026-06-09,"Forecast (ridge, chosen)",28229.0
+2026-06-10,"Forecast (ridge, chosen)",27952.0
+2026-06-11,"Forecast (ridge, chosen)",27781.0
+2026-06-12,"Forecast (ridge, chosen)",26988.0
+2026-06-13,"Forecast (ridge, chosen)",23124.0
+2026-06-14,"Forecast (ridge, chosen)",24088.0
+2026-06-15,"Forecast (ridge, chosen)",27589.0
+2026-06-16,"Forecast (ridge, chosen)",28005.0
+2026-06-17,"Forecast (ridge, chosen)",28128.0
+2026-06-18,"Forecast (ridge, chosen)",27521.0
+2026-06-19,"Forecast (ridge, chosen)",27261.0
+2026-06-20,"Forecast (ridge, chosen)",24904.0
+2026-06-21,"Forecast (ridge, chosen)",25759.0
+2026-06-22,"Forecast (ridge, chosen)",28681.0
+2026-06-23,"Forecast (ridge, chosen)",29673.0
+2026-06-24,"Forecast (ridge, chosen)",29921.0
+2026-06-25,"Forecast (ridge, chosen)",30083.0
+2026-06-26,"Forecast (ridge, chosen)",29896.0
+2026-06-27,"Forecast (ridge, chosen)",26678.0
+2026-06-28,"Forecast (ridge, chosen)",26794.0
+2026-06-29,"Forecast (ridge, chosen)",28032.0
+2026-06-30,"Forecast (ridge, chosen)",28402.0
+2026-07-01,"Forecast (ridge, chosen)",28271.0
+2026-07-02,"Forecast (ridge, chosen)",27200.0
+2026-07-03,"Forecast (ridge, chosen)",25587.0
+2026-07-04,"Forecast (ridge, chosen)",24196.0
+2026-07-05,"Forecast (ridge, chosen)",25102.0
+2026-07-06,"Forecast (ridge, chosen)",28723.0
+2026-07-07,"Forecast (ridge, chosen)",28519.0
+2026-07-08,"Forecast (ridge, chosen)",29522.0
+2026-07-09,"Forecast (ridge, chosen)",29967.0
+2026-07-10,"Forecast (ridge, chosen)",28994.0
+2026-07-11,"Forecast (ridge, chosen)",26320.0
+2026-07-12,"Forecast (ridge, chosen)",26778.0
+2026-07-13,"Forecast (ridge, chosen)",28610.0
+2026-07-14,"Forecast (ridge, chosen)",28301.0
+2026-07-15,"Forecast (ridge, chosen)",28635.0
+2026-07-16,"Forecast (ridge, chosen)",28299.0
+2026-07-17,"Forecast (ridge, chosen)",27255.0
+2026-07-18,"Forecast (ridge, chosen)",24604.0
+2026-07-19,"Forecast (ridge, chosen)",24959.0
+2026-07-20,"Forecast (ridge, chosen)",28210.0
+2026-07-21,"Forecast (ridge, chosen)",28142.0
+2026-07-22,"Forecast (ridge, chosen)",28108.0
+2026-07-23,"Forecast (ridge, chosen)",28284.0
+2026-07-24,"Forecast (ridge, chosen)",27251.0
+2026-07-25,"Forecast (ridge, chosen)",24647.0
+2026-07-26,"Forecast (ridge, chosen)",25858.0
+2026-07-27,"Forecast (ridge, chosen)",27837.0
+2026-07-28,"Forecast (ridge, chosen)",29033.0
+2026-07-29,"Forecast (ridge, chosen)",28909.0
+2026-07-30,"Forecast (ridge, chosen)",28845.0
+2026-07-31,"Forecast (ridge, chosen)",26881.0
+2026-08-01,"Forecast (ridge, chosen)",24652.0
+2026-08-02,"Forecast (ridge, chosen)",25457.0
+2026-08-03,"Forecast (ridge, chosen)",28887.0
+2026-08-04,"Forecast (ridge, chosen)",29222.0
+2026-08-05,"Forecast (ridge, chosen)",28490.0
+2026-08-06,"Forecast (ridge, chosen)",26501.0
+2026-08-07,"Forecast (ridge, chosen)",26941.0
+2026-08-08,"Forecast (ridge, chosen)",24292.0
+2026-08-09,"Forecast (ridge, chosen)",25956.0
+2026-08-10,"Forecast (ridge, chosen)",28701.0
+2026-08-11,"Forecast (ridge, chosen)",28820.0
+2026-08-12,"Forecast (ridge, chosen)",29142.0
+2026-08-13,"Forecast (ridge, chosen)",29957.0
+2026-08-14,"Forecast (ridge, chosen)",29479.0
+2026-08-15,"Forecast (ridge, chosen)",26606.0
+2026-08-16,"Forecast (ridge, chosen)",26697.0
+2026-08-17,"Forecast (ridge, chosen)",29736.0
+2026-08-18,"Forecast (ridge, chosen)",30020.0
+2026-08-19,"Forecast (ridge, chosen)",29363.0
+2026-08-20,"Forecast (ridge, chosen)",28666.0
+2026-08-21,"Forecast (ridge, chosen)",27393.0
+2026-08-22,"Forecast (ridge, chosen)",24840.0
+2026-08-23,"Forecast (ridge, chosen)",26197.0
+2026-08-24,"Forecast (ridge, chosen)",29044.0
+2026-08-25,"Forecast (ridge, chosen)",28980.0
+2026-08-26,"Forecast (ridge, chosen)",29323.0
+2026-08-27,"Forecast (ridge, chosen)",29601.0
+2026-08-28,"Forecast (ridge, chosen)",28368.0
+2026-08-29,"Forecast (ridge, chosen)",25748.0
+2026-08-30,"Forecast (ridge, chosen)",27233.0
+2026-08-31,"Forecast (ridge, chosen)",26611.0
+2026-09-01,"Forecast (ridge, chosen)",28669.0
+2026-09-02,"Forecast (ridge, chosen)",29992.0
+2026-09-03,"Forecast (ridge, chosen)",30196.0
+2026-09-04,"Forecast (ridge, chosen)",28688.0
+2026-09-05,"Forecast (ridge, chosen)",25339.0
+2026-09-06,"Forecast (ridge, chosen)",27257.0
+2026-09-07,"Forecast (ridge, chosen)",30085.0
+2026-09-08,"Forecast (ridge, chosen)",29862.0
+2026-09-09,"Forecast (ridge, chosen)",29521.0
+2026-09-10,"Forecast (ridge, chosen)",30110.0
+2026-09-11,"Forecast (ridge, chosen)",28712.0
+2026-09-12,"Forecast (ridge, chosen)",26809.0
+2026-09-13,"Forecast (ridge, chosen)",27989.0
+2026-09-14,"Forecast (ridge, chosen)",31651.0
+2026-09-15,"Forecast (ridge, chosen)",30883.0
+2026-09-16,"Forecast (ridge, chosen)",30551.0
+2026-09-17,"Forecast (ridge, chosen)",30551.0
+2026-09-18,"Forecast (ridge, chosen)",29189.0
+2026-09-19,"Forecast (ridge, chosen)",26900.0
+2026-09-20,"Forecast (ridge, chosen)",27423.0
+2026-09-21,"Forecast (ridge, chosen)",30695.0
+2026-09-22,"Forecast (ridge, chosen)",31659.0
+2026-09-23,"Forecast (ridge, chosen)",31217.0
+2026-09-24,"Forecast (ridge, chosen)",31041.0
+2026-09-25,"Forecast (ridge, chosen)",30095.0
+2026-09-26,"Forecast (ridge, chosen)",28048.0
+2026-09-27,"Forecast (ridge, chosen)",28423.0
+2026-09-28,"Forecast (ridge, chosen)",31966.0
+2026-09-29,"Forecast (ridge, chosen)",32198.0
+2026-09-30,"Forecast (ridge, chosen)",32046.0
+2026-10-01,"Forecast (ridge, chosen)",31372.0
+2026-10-02,"Forecast (ridge, chosen)",30368.0
+2026-10-03,"Forecast (ridge, chosen)",27471.0
+2026-10-04,"Forecast (ridge, chosen)",29363.0
+2026-10-05,"Forecast (ridge, chosen)",31886.0
+2026-10-06,"Forecast (ridge, chosen)",31755.0
+2026-10-07,"Forecast (ridge, chosen)",33104.0
+2026-10-08,"Forecast (ridge, chosen)",33882.0
+2026-10-09,"Forecast (ridge, chosen)",31889.0
+2026-10-10,"Forecast (ridge, chosen)",30056.0
+2026-10-11,"Forecast (ridge, chosen)",31118.0
+2026-10-12,"Forecast (ridge, chosen)",33963.0
+2026-10-13,"Forecast (ridge, chosen)",33387.0
+2026-10-14,"Forecast (ridge, chosen)",33061.0
+2026-10-15,"Forecast (ridge, chosen)",31930.0
+2026-10-16,"Forecast (ridge, chosen)",33285.0
+2026-10-17,"Forecast (ridge, chosen)",32014.0
+2026-10-18,"Forecast (ridge, chosen)",33535.0
+2026-10-19,"Forecast (ridge, chosen)",35915.0
+2026-10-20,"Forecast (ridge, chosen)",36149.0
+2026-10-21,"Forecast (ridge, chosen)",37013.0
+2026-10-22,"Forecast (ridge, chosen)",36171.0
+2026-10-23,"Forecast (ridge, chosen)",35688.0
+2026-10-24,"Forecast (ridge, chosen)",32672.0
+2026-10-25,"Forecast (ridge, chosen)",33601.0
+2026-10-26,"Forecast (ridge, chosen)",35651.0
+2026-10-27,"Forecast (ridge, chosen)",35555.0
+2026-10-28,"Forecast (ridge, chosen)",35849.0
+2026-10-29,"Forecast (ridge, chosen)",36227.0
+2026-10-30,"Forecast (ridge, chosen)",35415.0
+2026-01-01,Gradient boosting,38260.0
+2026-01-02,Gradient boosting,39344.0
+2026-01-03,Gradient boosting,40847.0
+2026-01-04,Gradient boosting,42699.0
+2026-01-05,Gradient boosting,44012.0
+2026-01-06,Gradient boosting,44252.0
+2026-01-07,Gradient boosting,42500.0
+2026-01-08,Gradient boosting,42910.0
+2026-01-09,Gradient boosting,42320.0
+2026-01-10,Gradient boosting,42074.0
+2026-01-11,Gradient boosting,41714.0
+2026-01-12,Gradient boosting,39001.0
+2026-01-13,Gradient boosting,40092.0
+2026-01-14,Gradient boosting,42734.0
+2026-01-15,Gradient boosting,40798.0
+2026-01-16,Gradient boosting,40978.0
+2026-01-17,Gradient boosting,37614.0
+2026-01-18,Gradient boosting,39234.0
+2026-01-19,Gradient boosting,40479.0
+2026-01-20,Gradient boosting,39609.0
+2026-01-21,Gradient boosting,39643.0
+2026-01-22,Gradient boosting,39000.0
+2026-01-23,Gradient boosting,39432.0
+2026-01-24,Gradient boosting,37022.0
+2026-01-25,Gradient boosting,37299.0
+2026-01-26,Gradient boosting,41571.0
+2026-01-27,Gradient boosting,40800.0
+2026-01-28,Gradient boosting,40991.0
+2026-01-29,Gradient boosting,41673.0
+2026-01-30,Gradient boosting,39772.0
+2026-01-31,Gradient boosting,36055.0
+2026-02-01,Gradient boosting,37789.0
+2026-02-02,Gradient boosting,41069.0
+2026-02-03,Gradient boosting,42045.0
+2026-02-04,Gradient boosting,41334.0
+2026-02-05,Gradient boosting,41000.0
+2026-02-06,Gradient boosting,39267.0
+2026-02-07,Gradient boosting,35890.0
+2026-02-08,Gradient boosting,36390.0
+2026-02-09,Gradient boosting,39858.0
+2026-02-10,Gradient boosting,39363.0
+2026-02-11,Gradient boosting,39134.0
+2026-02-12,Gradient boosting,39741.0
+2026-02-13,Gradient boosting,40475.0
+2026-02-14,Gradient boosting,38037.0
+2026-02-15,Gradient boosting,39247.0
+2026-02-16,Gradient boosting,41247.0
+2026-02-17,Gradient boosting,41095.0
+2026-02-18,Gradient boosting,41736.0
+2026-02-19,Gradient boosting,41440.0
+2026-02-20,Gradient boosting,38861.0
+2026-02-21,Gradient boosting,35101.0
+2026-02-22,Gradient boosting,36112.0
+2026-02-23,Gradient boosting,38136.0
+2026-02-24,Gradient boosting,37508.0
+2026-02-25,Gradient boosting,36494.0
+2026-02-26,Gradient boosting,36443.0
+2026-02-27,Gradient boosting,37098.0
+2026-02-28,Gradient boosting,35684.0
+2026-03-01,Gradient boosting,35513.0
+2026-03-02,Gradient boosting,37385.0
+2026-03-03,Gradient boosting,37849.0
+2026-03-04,Gradient boosting,37932.0
+2026-03-05,Gradient boosting,36278.0
+2026-03-06,Gradient boosting,36384.0
+2026-03-07,Gradient boosting,35317.0
+2026-03-08,Gradient boosting,34935.0
+2026-03-09,Gradient boosting,38293.0
+2026-03-10,Gradient boosting,37024.0
+2026-03-11,Gradient boosting,35709.0
+2026-03-12,Gradient boosting,35067.0
+2026-03-13,Gradient boosting,36447.0
+2026-03-14,Gradient boosting,35669.0
+2026-03-15,Gradient boosting,36086.0
+2026-03-16,Gradient boosting,36524.0
+2026-03-17,Gradient boosting,35933.0
+2026-03-18,Gradient boosting,34384.0
+2026-03-19,Gradient boosting,35433.0
+2026-03-20,Gradient boosting,35007.0
+2026-03-21,Gradient boosting,32377.0
+2026-03-22,Gradient boosting,33138.0
+2026-03-23,Gradient boosting,35943.0
+2026-03-24,Gradient boosting,34797.0
+2026-03-25,Gradient boosting,36050.0
+2026-03-26,Gradient boosting,35792.0
+2026-03-27,Gradient boosting,35323.0
+2026-03-28,Gradient boosting,33019.0
+2026-03-29,Gradient boosting,32228.0
+2026-03-30,Gradient boosting,32967.0
+2026-03-31,Gradient boosting,33524.0
+2026-04-01,Gradient boosting,32709.0
+2026-04-02,Gradient boosting,34037.0
+2026-04-03,Gradient boosting,30124.0
+2026-04-04,Gradient boosting,28840.0
+2026-04-05,Gradient boosting,29398.0
+2026-04-06,Gradient boosting,29309.0
+2026-04-07,Gradient boosting,31630.0
+2026-04-08,Gradient boosting,30377.0
+2026-04-09,Gradient boosting,31023.0
+2026-04-10,Gradient boosting,29715.0
+2026-04-11,Gradient boosting,28195.0
+2026-04-12,Gradient boosting,28345.0
+2026-04-13,Gradient boosting,32436.0
+2026-04-14,Gradient boosting,32687.0
+2026-04-15,Gradient boosting,31934.0
+2026-04-16,Gradient boosting,30769.0
+2026-04-17,Gradient boosting,30324.0
+2026-04-18,Gradient boosting,26938.0
+2026-04-19,Gradient boosting,28094.0
+2026-04-20,Gradient boosting,31974.0
+2026-04-21,Gradient boosting,31782.0
+2026-04-22,Gradient boosting,30918.0
+2026-04-23,Gradient boosting,31145.0
+2026-04-24,Gradient boosting,29266.0
+2026-04-25,Gradient boosting,26981.0
+2026-04-26,Gradient boosting,28000.0
+2026-04-27,Gradient boosting,30637.0
+2026-04-28,Gradient boosting,31196.0
+2026-04-29,Gradient boosting,30030.0
+2026-04-30,Gradient boosting,28964.0
+2026-05-01,Gradient boosting,27326.0
+2026-05-02,Gradient boosting,26293.0
+2026-05-03,Gradient boosting,26970.0
+2026-05-04,Gradient boosting,27831.0
+2026-05-05,Gradient boosting,29094.0
+2026-05-06,Gradient boosting,29807.0
+2026-05-07,Gradient boosting,30184.0
+2026-05-08,Gradient boosting,29028.0
+2026-05-09,Gradient boosting,26851.0
+2026-05-10,Gradient boosting,26921.0
+2026-05-11,Gradient boosting,29369.0
+2026-05-12,Gradient boosting,30366.0
+2026-05-13,Gradient boosting,29651.0
+2026-05-14,Gradient boosting,30353.0
+2026-05-15,Gradient boosting,28935.0
+2026-05-16,Gradient boosting,27711.0
+2026-05-17,Gradient boosting,27287.0
+2026-05-18,Gradient boosting,29726.0
+2026-05-19,Gradient boosting,29403.0
+2026-05-20,Gradient boosting,28676.0
+2026-05-21,Gradient boosting,28720.0
+2026-05-22,Gradient boosting,27626.0
+2026-05-23,Gradient boosting,26342.0
+2026-05-24,Gradient boosting,26659.0
+2026-05-25,Gradient boosting,28074.0
+2026-05-26,Gradient boosting,28679.0
+2026-05-27,Gradient boosting,28848.0
+2026-05-28,Gradient boosting,28000.0
+2026-05-29,Gradient boosting,26743.0
+2026-05-30,Gradient boosting,25058.0
+2026-05-31,Gradient boosting,24647.0
+2026-06-01,Gradient boosting,26701.0
+2026-06-02,Gradient boosting,28058.0
+2026-06-03,Gradient boosting,26976.0
+2026-06-04,Gradient boosting,27373.0
+2026-06-05,Gradient boosting,25976.0
+2026-06-06,Gradient boosting,24544.0
+2026-06-07,Gradient boosting,25654.0
+2026-06-08,Gradient boosting,27750.0
+2026-06-09,Gradient boosting,28409.0
+2026-06-10,Gradient boosting,27953.0
+2026-06-11,Gradient boosting,27930.0
+2026-06-12,Gradient boosting,27148.0
+2026-06-13,Gradient boosting,24643.0
+2026-06-14,Gradient boosting,25064.0
+2026-06-15,Gradient boosting,28318.0
+2026-06-16,Gradient boosting,27905.0
+2026-06-17,Gradient boosting,28197.0
+2026-06-18,Gradient boosting,28714.0
+2026-06-19,Gradient boosting,27634.0
+2026-06-20,Gradient boosting,24993.0
+2026-06-21,Gradient boosting,26771.0
+2026-06-22,Gradient boosting,28890.0
+2026-06-23,Gradient boosting,29617.0
+2026-06-24,Gradient boosting,29526.0
+2026-06-25,Gradient boosting,29268.0
+2026-06-26,Gradient boosting,28684.0
+2026-06-27,Gradient boosting,26560.0
+2026-06-28,Gradient boosting,26805.0
+2026-06-29,Gradient boosting,27104.0
+2026-06-30,Gradient boosting,28593.0
+2026-07-01,Gradient boosting,28085.0
+2026-07-02,Gradient boosting,27987.0
+2026-07-03,Gradient boosting,26416.0
+2026-07-04,Gradient boosting,24912.0
+2026-07-05,Gradient boosting,25971.0
+2026-07-06,Gradient boosting,29457.0
+2026-07-07,Gradient boosting,29190.0
+2026-07-08,Gradient boosting,29435.0
+2026-07-09,Gradient boosting,29179.0
+2026-07-10,Gradient boosting,28553.0
+2026-07-11,Gradient boosting,26284.0
+2026-07-12,Gradient boosting,26927.0
+2026-07-13,Gradient boosting,28230.0
+2026-07-14,Gradient boosting,29212.0
+2026-07-15,Gradient boosting,29603.0
+2026-07-16,Gradient boosting,29312.0
+2026-07-17,Gradient boosting,28531.0
+2026-07-18,Gradient boosting,25482.0
+2026-07-19,Gradient boosting,24953.0
+2026-07-20,Gradient boosting,27851.0
+2026-07-21,Gradient boosting,28319.0
+2026-07-22,Gradient boosting,28912.0
+2026-07-23,Gradient boosting,28946.0
+2026-07-24,Gradient boosting,27747.0
+2026-07-25,Gradient boosting,25608.0
+2026-07-26,Gradient boosting,25344.0
+2026-07-27,Gradient boosting,27286.0
+2026-07-28,Gradient boosting,29208.0
+2026-07-29,Gradient boosting,29245.0
+2026-07-30,Gradient boosting,28711.0
+2026-07-31,Gradient boosting,25744.0
+2026-08-01,Gradient boosting,24082.0
+2026-08-02,Gradient boosting,25429.0
+2026-08-03,Gradient boosting,28811.0
+2026-08-04,Gradient boosting,28689.0
+2026-08-05,Gradient boosting,28474.0
+2026-08-06,Gradient boosting,26640.0
+2026-08-07,Gradient boosting,26924.0
+2026-08-08,Gradient boosting,25044.0
+2026-08-09,Gradient boosting,26467.0
+2026-08-10,Gradient boosting,28379.0
+2026-08-11,Gradient boosting,28562.0
+2026-08-12,Gradient boosting,28572.0
+2026-08-13,Gradient boosting,29937.0
+2026-08-14,Gradient boosting,29129.0
+2026-08-15,Gradient boosting,26448.0
+2026-08-16,Gradient boosting,26298.0
+2026-08-17,Gradient boosting,29092.0
+2026-08-18,Gradient boosting,29407.0
+2026-08-19,Gradient boosting,29359.0
+2026-08-20,Gradient boosting,28653.0
+2026-08-21,Gradient boosting,27075.0
+2026-08-22,Gradient boosting,25800.0
+2026-08-23,Gradient boosting,26224.0
+2026-08-24,Gradient boosting,28582.0
+2026-08-25,Gradient boosting,28804.0
+2026-08-26,Gradient boosting,29263.0
+2026-08-27,Gradient boosting,29372.0
+2026-08-28,Gradient boosting,27991.0
+2026-08-29,Gradient boosting,25655.0
+2026-08-30,Gradient boosting,27125.0
+2026-08-31,Gradient boosting,27221.0
+2026-09-01,Gradient boosting,28436.0
+2026-09-02,Gradient boosting,29764.0
+2026-09-03,Gradient boosting,30519.0
+2026-09-04,Gradient boosting,28678.0
+2026-09-05,Gradient boosting,26504.0
+2026-09-06,Gradient boosting,28110.0
+2026-09-07,Gradient boosting,29451.0
+2026-09-08,Gradient boosting,30230.0
+2026-09-09,Gradient boosting,30133.0
+2026-09-10,Gradient boosting,30062.0
+2026-09-11,Gradient boosting,27962.0
+2026-09-12,Gradient boosting,27572.0
+2026-09-13,Gradient boosting,28285.0
+2026-09-14,Gradient boosting,31244.0
+2026-09-15,Gradient boosting,30188.0
+2026-09-16,Gradient boosting,30565.0
+2026-09-17,Gradient boosting,30722.0
+2026-09-18,Gradient boosting,29384.0
+2026-09-19,Gradient boosting,27528.0
+2026-09-20,Gradient boosting,28837.0
+2026-09-21,Gradient boosting,30922.0
+2026-09-22,Gradient boosting,31274.0
+2026-09-23,Gradient boosting,31092.0
+2026-09-24,Gradient boosting,31088.0
+2026-09-25,Gradient boosting,29754.0
+2026-09-26,Gradient boosting,28300.0
+2026-09-27,Gradient boosting,28837.0
+2026-09-28,Gradient boosting,31846.0
+2026-09-29,Gradient boosting,32777.0
+2026-09-30,Gradient boosting,32208.0
+2026-10-01,Gradient boosting,31269.0
+2026-10-02,Gradient boosting,30253.0
+2026-10-03,Gradient boosting,27179.0
+2026-10-04,Gradient boosting,29727.0
+2026-10-05,Gradient boosting,32024.0
+2026-10-06,Gradient boosting,32237.0
+2026-10-07,Gradient boosting,33708.0
+2026-10-08,Gradient boosting,34118.0
+2026-10-09,Gradient boosting,31659.0
+2026-10-10,Gradient boosting,30524.0
+2026-10-11,Gradient boosting,32144.0
+2026-10-12,Gradient boosting,33938.0
+2026-10-13,Gradient boosting,33741.0
+2026-10-14,Gradient boosting,33651.0
+2026-10-15,Gradient boosting,33084.0
+2026-10-16,Gradient boosting,33594.0
+2026-10-17,Gradient boosting,32205.0
+2026-10-18,Gradient boosting,33837.0
+2026-10-19,Gradient boosting,36439.0
+2026-10-20,Gradient boosting,35666.0
+2026-10-21,Gradient boosting,35927.0
+2026-10-22,Gradient boosting,35583.0
+2026-10-23,Gradient boosting,35754.0
+2026-10-24,Gradient boosting,32813.0
+2026-10-25,Gradient boosting,34967.0
+2026-10-26,Gradient boosting,36545.0
+2026-10-27,Gradient boosting,36279.0
+2026-10-28,Gradient boosting,36126.0
+2026-10-29,Gradient boosting,36293.0
+2026-10-30,Gradient boosting,35576.0
+2026-01-01,Gradient boosting (no weather),37849.0
+2026-01-02,Gradient boosting (no weather),38243.0
+2026-01-03,Gradient boosting (no weather),41190.0
+2026-01-04,Gradient boosting (no weather),42717.0
+2026-01-05,Gradient boosting (no weather),44173.0
+2026-01-06,Gradient boosting (no weather),43462.0
+2026-01-07,Gradient boosting (no weather),44451.0
+2026-01-08,Gradient boosting (no weather),44320.0
+2026-01-09,Gradient boosting (no weather),43790.0
+2026-01-10,Gradient boosting (no weather),41716.0
+2026-01-11,Gradient boosting (no weather),42201.0
+2026-01-12,Gradient boosting (no weather),41566.0
+2026-01-13,Gradient boosting (no weather),40801.0
+2026-01-14,Gradient boosting (no weather),41699.0
+2026-01-15,Gradient boosting (no weather),41435.0
+2026-01-16,Gradient boosting (no weather),40654.0
+2026-01-17,Gradient boosting (no weather),39201.0
+2026-01-18,Gradient boosting (no weather),39428.0
+2026-01-19,Gradient boosting (no weather),40707.0
+2026-01-20,Gradient boosting (no weather),40594.0
+2026-01-21,Gradient boosting (no weather),39345.0
+2026-01-22,Gradient boosting (no weather),39484.0
+2026-01-23,Gradient boosting (no weather),38681.0
+2026-01-24,Gradient boosting (no weather),37115.0
+2026-01-25,Gradient boosting (no weather),36974.0
+2026-01-26,Gradient boosting (no weather),41093.0
+2026-01-27,Gradient boosting (no weather),41005.0
+2026-01-28,Gradient boosting (no weather),40551.0
+2026-01-29,Gradient boosting (no weather),40926.0
+2026-01-30,Gradient boosting (no weather),40579.0
+2026-01-31,Gradient boosting (no weather),36571.0
+2026-02-01,Gradient boosting (no weather),37409.0
+2026-02-02,Gradient boosting (no weather),40462.0
+2026-02-03,Gradient boosting (no weather),40811.0
+2026-02-04,Gradient boosting (no weather),42269.0
+2026-02-05,Gradient boosting (no weather),40578.0
+2026-02-06,Gradient boosting (no weather),38829.0
+2026-02-07,Gradient boosting (no weather),37266.0
+2026-02-08,Gradient boosting (no weather),36985.0
+2026-02-09,Gradient boosting (no weather),40905.0
+2026-02-10,Gradient boosting (no weather),40045.0
+2026-02-11,Gradient boosting (no weather),41533.0
+2026-02-12,Gradient boosting (no weather),38696.0
+2026-02-13,Gradient boosting (no weather),38902.0
+2026-02-14,Gradient boosting (no weather),36939.0
+2026-02-15,Gradient boosting (no weather),39581.0
+2026-02-16,Gradient boosting (no weather),40456.0
+2026-02-17,Gradient boosting (no weather),39471.0
+2026-02-18,Gradient boosting (no weather),41005.0
+2026-02-19,Gradient boosting (no weather),39243.0
+2026-02-20,Gradient boosting (no weather),39792.0
+2026-02-21,Gradient boosting (no weather),35322.0
+2026-02-22,Gradient boosting (no weather),36752.0
+2026-02-23,Gradient boosting (no weather),37876.0
+2026-02-24,Gradient boosting (no weather),39243.0
+2026-02-25,Gradient boosting (no weather),36889.0
+2026-02-26,Gradient boosting (no weather),36890.0
+2026-02-27,Gradient boosting (no weather),37526.0
+2026-02-28,Gradient boosting (no weather),35755.0
+2026-03-01,Gradient boosting (no weather),36206.0
+2026-03-02,Gradient boosting (no weather),37381.0
+2026-03-03,Gradient boosting (no weather),37770.0
+2026-03-04,Gradient boosting (no weather),38272.0
+2026-03-05,Gradient boosting (no weather),37296.0
+2026-03-06,Gradient boosting (no weather),35880.0
+2026-03-07,Gradient boosting (no weather),35728.0
+2026-03-08,Gradient boosting (no weather),35882.0
+2026-03-09,Gradient boosting (no weather),39462.0
+2026-03-10,Gradient boosting (no weather),37381.0
+2026-03-11,Gradient boosting (no weather),36413.0
+2026-03-12,Gradient boosting (no weather),35517.0
+2026-03-13,Gradient boosting (no weather),35359.0
+2026-03-14,Gradient boosting (no weather),34883.0
+2026-03-15,Gradient boosting (no weather),35185.0
+2026-03-16,Gradient boosting (no weather),36578.0
+2026-03-17,Gradient boosting (no weather),36820.0
+2026-03-18,Gradient boosting (no weather),35287.0
+2026-03-19,Gradient boosting (no weather),35824.0
+2026-03-20,Gradient boosting (no weather),34744.0
+2026-03-21,Gradient boosting (no weather),32209.0
+2026-03-22,Gradient boosting (no weather),33586.0
+2026-03-23,Gradient boosting (no weather),36084.0
+2026-03-24,Gradient boosting (no weather),35175.0
+2026-03-25,Gradient boosting (no weather),35051.0
+2026-03-26,Gradient boosting (no weather),35753.0
+2026-03-27,Gradient boosting (no weather),35984.0
+2026-03-28,Gradient boosting (no weather),32160.0
+2026-03-29,Gradient boosting (no weather),31932.0
+2026-03-30,Gradient boosting (no weather),33158.0
+2026-03-31,Gradient boosting (no weather),33752.0
+2026-04-01,Gradient boosting (no weather),33299.0
+2026-04-02,Gradient boosting (no weather),33653.0
+2026-04-03,Gradient boosting (no weather),30442.0
+2026-04-04,Gradient boosting (no weather),28855.0
+2026-04-05,Gradient boosting (no weather),29598.0
+2026-04-06,Gradient boosting (no weather),29618.0
+2026-04-07,Gradient boosting (no weather),31861.0
+2026-04-08,Gradient boosting (no weather),31539.0
+2026-04-09,Gradient boosting (no weather),31361.0
+2026-04-10,Gradient boosting (no weather),29540.0
+2026-04-11,Gradient boosting (no weather),27532.0
+2026-04-12,Gradient boosting (no weather),28398.0
+2026-04-13,Gradient boosting (no weather),31788.0
+2026-04-14,Gradient boosting (no weather),32725.0
+2026-04-15,Gradient boosting (no weather),32580.0
+2026-04-16,Gradient boosting (no weather),30617.0
+2026-04-17,Gradient boosting (no weather),30922.0
+2026-04-18,Gradient boosting (no weather),26920.0
+2026-04-19,Gradient boosting (no weather),28352.0
+2026-04-20,Gradient boosting (no weather),32207.0
+2026-04-21,Gradient boosting (no weather),31687.0
+2026-04-22,Gradient boosting (no weather),30734.0
+2026-04-23,Gradient boosting (no weather),31117.0
+2026-04-24,Gradient boosting (no weather),29259.0
+2026-04-25,Gradient boosting (no weather),27205.0
+2026-04-26,Gradient boosting (no weather),28310.0
+2026-04-27,Gradient boosting (no weather),31320.0
+2026-04-28,Gradient boosting (no weather),30951.0
+2026-04-29,Gradient boosting (no weather),29913.0
+2026-04-30,Gradient boosting (no weather),28824.0
+2026-05-01,Gradient boosting (no weather),27532.0
+2026-05-02,Gradient boosting (no weather),26197.0
+2026-05-03,Gradient boosting (no weather),27008.0
+2026-05-04,Gradient boosting (no weather),27877.0
+2026-05-05,Gradient boosting (no weather),28745.0
+2026-05-06,Gradient boosting (no weather),29020.0
+2026-05-07,Gradient boosting (no weather),29723.0
+2026-05-08,Gradient boosting (no weather),29079.0
+2026-05-09,Gradient boosting (no weather),26940.0
+2026-05-10,Gradient boosting (no weather),26833.0
+2026-05-11,Gradient boosting (no weather),28139.0
+2026-05-12,Gradient boosting (no weather),29291.0
+2026-05-13,Gradient boosting (no weather),28800.0
+2026-05-14,Gradient boosting (no weather),29275.0
+2026-05-15,Gradient boosting (no weather),28141.0
+2026-05-16,Gradient boosting (no weather),26494.0
+2026-05-17,Gradient boosting (no weather),27261.0
+2026-05-18,Gradient boosting (no weather),29064.0
+2026-05-19,Gradient boosting (no weather),29257.0
+2026-05-20,Gradient boosting (no weather),28855.0
+2026-05-21,Gradient boosting (no weather),28703.0
+2026-05-22,Gradient boosting (no weather),27365.0
+2026-05-23,Gradient boosting (no weather),25592.0
+2026-05-24,Gradient boosting (no weather),26140.0
+2026-05-25,Gradient boosting (no weather),27433.0
+2026-05-26,Gradient boosting (no weather),28306.0
+2026-05-27,Gradient boosting (no weather),28149.0
+2026-05-28,Gradient boosting (no weather),27115.0
+2026-05-29,Gradient boosting (no weather),26516.0
+2026-05-30,Gradient boosting (no weather),24189.0
+2026-05-31,Gradient boosting (no weather),24812.0
+2026-06-01,Gradient boosting (no weather),26537.0
+2026-06-02,Gradient boosting (no weather),28082.0
+2026-06-03,Gradient boosting (no weather),27269.0
+2026-06-04,Gradient boosting (no weather),27136.0
+2026-06-05,Gradient boosting (no weather),26496.0
+2026-06-06,Gradient boosting (no weather),24731.0
+2026-06-07,Gradient boosting (no weather),25841.0
+2026-06-08,Gradient boosting (no weather),27673.0
+2026-06-09,Gradient boosting (no weather),27990.0
+2026-06-10,Gradient boosting (no weather),27276.0
+2026-06-11,Gradient boosting (no weather),27525.0
+2026-06-12,Gradient boosting (no weather),28294.0
+2026-06-13,Gradient boosting (no weather),25091.0
+2026-06-14,Gradient boosting (no weather),25811.0
+2026-06-15,Gradient boosting (no weather),28358.0
+2026-06-16,Gradient boosting (no weather),28719.0
+2026-06-17,Gradient boosting (no weather),28672.0
+2026-06-18,Gradient boosting (no weather),28820.0
+2026-06-19,Gradient boosting (no weather),26566.0
+2026-06-20,Gradient boosting (no weather),25216.0
+2026-06-21,Gradient boosting (no weather),26353.0
+2026-06-22,Gradient boosting (no weather),27704.0
+2026-06-23,Gradient boosting (no weather),28650.0
+2026-06-24,Gradient boosting (no weather),28446.0
+2026-06-25,Gradient boosting (no weather),28712.0
+2026-06-26,Gradient boosting (no weather),28227.0
+2026-06-27,Gradient boosting (no weather),25432.0
+2026-06-28,Gradient boosting (no weather),25920.0
+2026-06-29,Gradient boosting (no weather),26911.0
+2026-06-30,Gradient boosting (no weather),28266.0
+2026-07-01,Gradient boosting (no weather),28012.0
+2026-07-02,Gradient boosting (no weather),27846.0
+2026-07-03,Gradient boosting (no weather),26675.0
+2026-07-04,Gradient boosting (no weather),25019.0
+2026-07-05,Gradient boosting (no weather),25554.0
+2026-07-06,Gradient boosting (no weather),28239.0
+2026-07-07,Gradient boosting (no weather),28221.0
+2026-07-08,Gradient boosting (no weather),29025.0
+2026-07-09,Gradient boosting (no weather),28631.0
+2026-07-10,Gradient boosting (no weather),27862.0
+2026-07-11,Gradient boosting (no weather),25479.0
+2026-07-12,Gradient boosting (no weather),26610.0
+2026-07-13,Gradient boosting (no weather),27619.0
+2026-07-14,Gradient boosting (no weather),28390.0
+2026-07-15,Gradient boosting (no weather),28627.0
+2026-07-16,Gradient boosting (no weather),28590.0
+2026-07-17,Gradient boosting (no weather),27958.0
+2026-07-18,Gradient boosting (no weather),25967.0
+2026-07-19,Gradient boosting (no weather),25203.0
+2026-07-20,Gradient boosting (no weather),28103.0
+2026-07-21,Gradient boosting (no weather),28475.0
+2026-07-22,Gradient boosting (no weather),28257.0
+2026-07-23,Gradient boosting (no weather),28592.0
+2026-07-24,Gradient boosting (no weather),26975.0
+2026-07-25,Gradient boosting (no weather),25049.0
+2026-07-26,Gradient boosting (no weather),25376.0
+2026-07-27,Gradient boosting (no weather),26678.0
+2026-07-28,Gradient boosting (no weather),28202.0
+2026-07-29,Gradient boosting (no weather),28126.0
+2026-07-30,Gradient boosting (no weather),28198.0
+2026-07-31,Gradient boosting (no weather),26220.0
+2026-08-01,Gradient boosting (no weather),24314.0
+2026-08-02,Gradient boosting (no weather),25146.0
+2026-08-03,Gradient boosting (no weather),27705.0
+2026-08-04,Gradient boosting (no weather),27994.0
+2026-08-05,Gradient boosting (no weather),28181.0
+2026-08-06,Gradient boosting (no weather),26712.0
+2026-08-07,Gradient boosting (no weather),27041.0
+2026-08-08,Gradient boosting (no weather),24751.0
+2026-08-09,Gradient boosting (no weather),25790.0
+2026-08-10,Gradient boosting (no weather),27861.0
+2026-08-11,Gradient boosting (no weather),28815.0
+2026-08-12,Gradient boosting (no weather),28233.0
+2026-08-13,Gradient boosting (no weather),29769.0
+2026-08-14,Gradient boosting (no weather),28781.0
+2026-08-15,Gradient boosting (no weather),25935.0
+2026-08-16,Gradient boosting (no weather),26404.0
+2026-08-17,Gradient boosting (no weather),28771.0
+2026-08-18,Gradient boosting (no weather),29303.0
+2026-08-19,Gradient boosting (no weather),28745.0
+2026-08-20,Gradient boosting (no weather),28716.0
+2026-08-21,Gradient boosting (no weather),27508.0
+2026-08-22,Gradient boosting (no weather),25749.0
+2026-08-23,Gradient boosting (no weather),26033.0
+2026-08-24,Gradient boosting (no weather),28212.0
+2026-08-25,Gradient boosting (no weather),28795.0
+2026-08-26,Gradient boosting (no weather),28653.0
+2026-08-27,Gradient boosting (no weather),28971.0
+2026-08-28,Gradient boosting (no weather),28040.0
+2026-08-29,Gradient boosting (no weather),25258.0
+2026-08-30,Gradient boosting (no weather),27002.0
+2026-08-31,Gradient boosting (no weather),27409.0
+2026-09-01,Gradient boosting (no weather),28765.0
+2026-09-02,Gradient boosting (no weather),29595.0
+2026-09-03,Gradient boosting (no weather),30091.0
+2026-09-04,Gradient boosting (no weather),29002.0
+2026-09-05,Gradient boosting (no weather),27007.0
+2026-09-06,Gradient boosting (no weather),28246.0
+2026-09-07,Gradient boosting (no weather),29176.0
+2026-09-08,Gradient boosting (no weather),29962.0
+2026-09-09,Gradient boosting (no weather),29928.0
+2026-09-10,Gradient boosting (no weather),30389.0
+2026-09-11,Gradient boosting (no weather),28425.0
+2026-09-12,Gradient boosting (no weather),27764.0
+2026-09-13,Gradient boosting (no weather),28010.0
+2026-09-14,Gradient boosting (no weather),31368.0
+2026-09-15,Gradient boosting (no weather),30430.0
+2026-09-16,Gradient boosting (no weather),30977.0
+2026-09-17,Gradient boosting (no weather),30832.0
+2026-09-18,Gradient boosting (no weather),30045.0
+2026-09-19,Gradient boosting (no weather),27496.0
+2026-09-20,Gradient boosting (no weather),29217.0
+2026-09-21,Gradient boosting (no weather),31181.0
+2026-09-22,Gradient boosting (no weather),31518.0
+2026-09-23,Gradient boosting (no weather),31447.0
+2026-09-24,Gradient boosting (no weather),31416.0
+2026-09-25,Gradient boosting (no weather),30703.0
+2026-09-26,Gradient boosting (no weather),28883.0
+2026-09-27,Gradient boosting (no weather),29859.0
+2026-09-28,Gradient boosting (no weather),32436.0
+2026-09-29,Gradient boosting (no weather),33266.0
+2026-09-30,Gradient boosting (no weather),32326.0
+2026-10-01,Gradient boosting (no weather),32121.0
+2026-10-02,Gradient boosting (no weather),31123.0
+2026-10-03,Gradient boosting (no weather),27906.0
+2026-10-04,Gradient boosting (no weather),31114.0
+2026-10-05,Gradient boosting (no weather),32730.0
+2026-10-06,Gradient boosting (no weather),32646.0
+2026-10-07,Gradient boosting (no weather),33424.0
+2026-10-08,Gradient boosting (no weather),33406.0
+2026-10-09,Gradient boosting (no weather),32965.0
+2026-10-10,Gradient boosting (no weather),30740.0
+2026-10-11,Gradient boosting (no weather),32064.0
+2026-10-12,Gradient boosting (no weather),35099.0
+2026-10-13,Gradient boosting (no weather),34424.0
+2026-10-14,Gradient boosting (no weather),34288.0
+2026-10-15,Gradient boosting (no weather),33240.0
+2026-10-16,Gradient boosting (no weather),33793.0
+2026-10-17,Gradient boosting (no weather),32298.0
+2026-10-18,Gradient boosting (no weather),34514.0
+2026-10-19,Gradient boosting (no weather),36397.0
+2026-10-20,Gradient boosting (no weather),35407.0
+2026-10-21,Gradient boosting (no weather),35445.0
+2026-10-22,Gradient boosting (no weather),35582.0
+2026-10-23,Gradient boosting (no weather),35366.0
+2026-10-24,Gradient boosting (no weather),33165.0
+2026-10-25,Gradient boosting (no weather),35253.0
+2026-10-26,Gradient boosting (no weather),36896.0
+2026-10-27,Gradient boosting (no weather),36391.0
+2026-10-28,Gradient boosting (no weather),36280.0
+2026-10-29,Gradient boosting (no weather),36499.0
+2026-10-30,Gradient boosting (no weather),35584.0
