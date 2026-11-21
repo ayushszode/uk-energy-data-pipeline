@@ -167,10 +167,11 @@ elif page == "Best time to use power":
     chart(fig, 340)
     best = findings.get("best_hours_by_season", {})
     if best:
+        st.markdown("**Cleanest hour of the day, by season** (and how much cleaner than the dirtiest hour)")
         cols = st.columns(len(best))
         for col, season in zip(cols, [s for s in SEASONS if s in best]):
             b = best[season]
-            col.metric(f"{season}: cleanest hour", f"{b['cleanest_hour']:02d}:00",
+            col.metric(season, f"{b['cleanest_hour']:02d}:00",
                        f"{b['cleanest'] - b['dirtiest']:.0f} g vs {b['dirtiest_hour']:02d}:00", delta_color="inverse",
                        help=f"Average {b['cleanest']:.0f} g/kWh at {b['cleanest_hour']:02d}:00 against "
                             f"{b['dirtiest']:.0f} g/kWh at {b['dirtiest_hour']:02d}:00 (dirtiest hour).")
